@@ -10,6 +10,8 @@ import 'package:myapp/page-1/dashboard.dart';
 import 'package:myapp/page-1/community.dart';
 import 'package:myapp/page-1/status.dart';
 import 'package:myapp/page-1/calls.dart';
+import 'package:myapp/page-1/dm.dart';
+import 'package:myapp/page-1/settings.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -32,8 +34,6 @@ class MyApp extends StatelessWidget {
 
 
 				appBar: AppBar(
-
-
 
 					title: const Text('Whatsapp'),
 					actions: <Widget>[
@@ -277,65 +277,8 @@ class MyApp extends StatelessWidget {
 						double fem = MediaQuery.of(context).size.width / baseWidth;
 						double ffem = fem * 0.97;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 						return SingleChildScrollView(
-							child: Status(),
+							child: Settings(),
 						);
 					},
 				),
