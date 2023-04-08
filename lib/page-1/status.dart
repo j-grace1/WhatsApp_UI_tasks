@@ -13,35 +13,38 @@ class Status extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // statuswQf (80:287)
+        // status8QB (80:287)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
-
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // tab19d (80:288)
+              // tabomD (80:288)
               padding: EdgeInsets.fromLTRB(19*fem, 23*fem, 14*fem, 10*fem),
               width: double.infinity,
               decoration: BoxDecoration (
                 color: Color(0xff4ecb71),
-
+                borderRadius: BorderRadius.only (
+                  topLeft: Radius.circular(20*fem),
+                  topRight: Radius.circular(20*fem),
+                ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // autogroupskdmq8f (TGMA1TA6eXKwLvQRCySKdM)
+                    // autogroupar5v5Tq (EJUkmVcqgzyvqeYy79AR5V)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 31*fem),
                     width: double.infinity,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Container(
-                          // whatsappGjm (80:290)
+                          // whatsappZ87 (80:290)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 153*fem, 1*fem),
                           child: Text(
                             'WhatsApp',
@@ -55,31 +58,31 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // slrcameraunj (80:292)
+                          // slrcameraM3y (80:292)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 11*fem, 0*fem),
                           width: 24*fem,
                           height: 24*fem,
                           child: Image.asset(
-                            'assets/page-1/images/slr-camera-e3D.png',
+                            'assets/page-1/images/slr-camera-H95.png',
                             fit: BoxFit.contain,
                           ),
                         ),
                         Container(
-                          // searchmoreats (80:293)
+                          // searchmoreT71 (80:293)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 11*fem, 0*fem),
                           width: 24*fem,
                           height: 24*fem,
                           child: Image.asset(
-                            'assets/page-1/images/search-more-2Ao.png',
+                            'assets/page-1/images/search-more-b55.png',
                             fit: BoxFit.contain,
                           ),
                         ),
                         Container(
-                          // moreSgB (80:291)
+                          // morewXy (80:291)
                           width: 24*fem,
                           height: 24*fem,
                           child: Image.asset(
-                            'assets/page-1/images/more-zYs.png',
+                            'assets/page-1/images/more-Xvj.png',
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -87,7 +90,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // navYjD (80:294)
+                    // navsgX (80:294)
                     margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 12*fem, 0*fem),
                     width: double.infinity,
                     height: 23*fem,
@@ -95,30 +98,30 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // peopleskintype7S3u (80:295)
+                          // peopleskintype7aaw (80:295)
                           width: 23*fem,
                           height: 23*fem,
                           child: Image.asset(
-                            'assets/page-1/images/people-skin-type-7.png',
+                            'assets/page-1/images/people-skin-type-7-uoy.png',
                             fit: BoxFit.contain,
                           ),
                         ),
                         Container(
-                          // autogroupkslb7vj (TGMAUBtYjpp4oSqeYdkSLb)
+                          // autogroupswt9GTm (EJUmDUsYEAvuxTUm8uSwT9)
                           padding: EdgeInsets.fromLTRB(53*fem, 3*fem, 0*fem, 1.5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // chatbqu (80:296)
+                                // chatNmh (80:296)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 66*fem, 0.5*fem),
                                 height: double.infinity,
                                 child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // chats6nf (80:298)
+                                      // chats3N3 (80:298)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                                       child: Text(
                                         'chats',
@@ -132,14 +135,14 @@ class Status extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // countPFy (80:300)
+                                      // countiyy (80:300)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 1*fem),
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1sB9 (80:301)
+                                            // ellipse12Us (80:301)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -147,7 +150,7 @@ class Status extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-2Eo.png',
+                                                  'assets/page-1/images/ellipse-1-GQT.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -155,7 +158,7 @@ class Status extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // ViK (80:302)
+                                            // V7Z (80:302)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -182,7 +185,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // group1waK (80:304)
+                                // group1y2j (80:304)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 65.99*fem, 0*fem),
                                 width: 54.01*fem,
                                 height: double.infinity,
@@ -193,14 +196,14 @@ class Status extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // autogroupksv1bum (TGMAnmBw2A1J7WduQyKSV1)
+                                      // autogrouptimr3oH (EJUmaim9bBozFjXTYetiMR)
                                       margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 1.01*fem, 0*fem),
                                       width: double.infinity,
                                       child: Row(
                                         crossAxisAlignment: CrossAxisAlignment.center,
                                         children: [
                                           Container(
-                                            // statusVVM (80:305)
+                                            // statusUdh (80:305)
                                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 2*fem, 0*fem),
                                             child: Text(
                                               'Status',
@@ -214,12 +217,12 @@ class Status extends StatelessWidget {
                                             ),
                                           ),
                                           Container(
-                                            // countN3M (80:306)
+                                            // countn8b (80:306)
                                             margin: EdgeInsets.fromLTRB(0*fem, 2.27*fem, 0*fem, 0*fem),
                                             width: 5*fem,
                                             height: 4.67*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/count.png',
+                                              'assets/page-1/images/count-dMd.png',
                                               width: 5*fem,
                                               height: 4.67*fem,
                                             ),
@@ -228,11 +231,11 @@ class Status extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // line2qhd (80:299)
+                                      // line2gUs (80:299)
                                       width: 54.01*fem,
                                       height: 0.5*fem,
                                       child: Image.asset(
-                                        'assets/page-1/images/line-2.png',
+                                        'assets/page-1/images/line-2-cqR.png',
                                         width: 54.01*fem,
                                         height: 0.5*fem,
                                       ),
@@ -241,7 +244,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // calls8Rq (80:310)
+                                // calls1GF (80:310)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0.5*fem),
                                 child: Text(
                                   'calls',
@@ -264,14 +267,14 @@ class Status extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupncbuoH5 (TGM4zbWji6z9TFV7Uvncbu)
+              // autogroupidtq6Yb (EJUgXhWjGqUSwL2fpTidTq)
               padding: EdgeInsets.fromLTRB(11*fem, 16*fem, 11*fem, 2.62*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    // headerS59 (80:311)
+                    // headernAX (80:311)
                     margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 186*fem, 33*fem),
                     width: double.infinity,
                     height: 35*fem,
@@ -279,7 +282,7 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // autogroupmvfd6vP (TGM5UR3iVNU9d9D5pfMvFD)
+                          // autogroup9yuksSs (EJUgzbuZw4BwagMZ1D9YUK)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 14*fem, 0*fem),
                           padding: EdgeInsets.fromLTRB(19*fem, 20*fem, 2*fem, 1*fem),
                           height: double.infinity,
@@ -293,7 +296,7 @@ class Status extends StatelessWidget {
                             ),
                           ),
                           child: Align(
-                            // defaultu79 (80:313)
+                            // defaultu8f (80:313)
                             alignment: Alignment.bottomRight,
                             child: SizedBox(
                               width: 14*fem,
@@ -307,14 +310,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupfrpmaj5 (TGM5afNJmncM87744UFrPm)
+                          // autogroupfvpzLDy (EJUh5bmExb6uBT58PrfVPZ)
                           margin: EdgeInsets.fromLTRB(0*fem, 3*fem, 0*fem, 2*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // mystatusfkX (80:317)
+                                // mystatusEq9 (80:317)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'My Status',
@@ -328,7 +331,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // taptoaddstatusupdate8u1 (80:393)
+                                // taptoaddstatusupdateUDh (80:393)
                                 'Tap to add status update',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -345,7 +348,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // recentupdatesdKy (80:394)
+                    // recentupdatesB87 (80:394)
                     margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 0*fem, 11*fem),
                     child: Text(
                       'Recent updates',
@@ -359,7 +362,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // text6jM (88:5)
+                    // textofH (88:5)
                     margin: EdgeInsets.fromLTRB(15*fem, 0*fem, 236*fem, 11*fem),
                     width: double.infinity,
                     height: 36*fem,
@@ -367,14 +370,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // statusBF1 (110:11)
+                          // statusG35 (110:11)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 15*fem, 0*fem),
                           width: 36*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // ellipse655V (88:2)
+                                // ellipse67ZV (88:2)
                                 left: 3*fem,
                                 top: 3*fem,
                                 child: Align(
@@ -396,7 +399,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // ellipse9tod (110:10)
+                                // ellipse9TWs (110:10)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -416,14 +419,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupssjsMBR (TGM5szCmoEaLXyiv5eSsJs)
+                          // autogroupdl9hKoy (EJUhLbLG3BqmymDrZoDL9H)
                           margin: EdgeInsets.fromLTRB(0*fem, 3*fem, 0*fem, 3*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // goddySCs (88:3)
+                                // goddypEw (88:3)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Goddy',
@@ -437,7 +440,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesagoK1m (88:4)
+                                // minutesago5Rm (88:4)
                                 '6 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -454,7 +457,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textRKh (110:12)
+                    // textzYj (110:12)
                     margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 238.43*fem, 5.37*fem),
                     width: double.infinity,
                     height: 53.63*fem,
@@ -462,14 +465,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // autogroupfu3mh2K (TGM6CtpwDQEJDhJUeAFU3m)
+                          // autogrouptxjzW1H (EJUhfR8EAtt454rbCmTXjZ)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.94*fem, 0*fem),
                           width: 53.63*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // statusNu9 (110:15)
+                                // statuspGs (110:15)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -477,7 +480,7 @@ class Status extends StatelessWidget {
                                     width: 53.63*fem,
                                     height: 53.63*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/status-LhR.png',
+                                      'assets/page-1/images/status-sWj.png',
                                       width: 53.63*fem,
                                       height: 53.63*fem,
                                     ),
@@ -485,7 +488,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // statusS8K (110:22)
+                                // statusqBy (110:22)
                                 left: 0.1624755859*fem,
                                 top: 0.162399292*fem,
                                 child: Container(
@@ -494,7 +497,7 @@ class Status extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse6WP5 (110:23)
+                                        // ellipse6wF1 (110:23)
                                         left: 10.3562011719*fem,
                                         top: 11.3191833496*fem,
                                         child: Align(
@@ -502,7 +505,7 @@ class Status extends StatelessWidget {
                                             width: 32.04*fem,
                                             height: 32.04*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-ix3.png',
+                                              'assets/page-1/images/ellipse-6-Y9q.png',
                                               width: 32.04*fem,
                                               height: 32.04*fem,
                                             ),
@@ -510,7 +513,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s1koD (112:33)
+                                        // s1BQF (112:33)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -518,7 +521,7 @@ class Status extends StatelessWidget {
                                             width: 53.31*fem,
                                             height: 53.31*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1-Q8j.png',
+                                              'assets/page-1/images/s1-9Uo.png',
                                               width: 53.31*fem,
                                               height: 53.31*fem,
                                             ),
@@ -533,14 +536,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogrouptmozR8f (TGM6MiuZJ3Sf7TW4VqTmoZ)
+                          // autogroupz3c74iw (EJUhp5YTgcs3n1AXDMZ3C7)
                           margin: EdgeInsets.fromLTRB(0*fem, 11.57*fem, 0*fem, 12.06*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // juvitusXBh (110:13)
+                                // juvituskLs (110:13)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Juvitus',
@@ -554,7 +557,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesagoo9D (110:14)
+                                // minutesago2ZH (110:14)
                                 '8 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -571,7 +574,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textgyh (112:48)
+                    // textjib (112:48)
                     margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 232.43*fem, 5.62*fem),
                     width: double.infinity,
                     height: 52.38*fem,
@@ -579,14 +582,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // statusmET (112:51)
+                          // statusDtf (112:51)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7.19*fem, 0*fem),
                           width: 52.38*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // ellipse64UT (112:52)
+                                // ellipse6wpf (112:52)
                                 left: 10*fem,
                                 top: 9.8549804688*fem,
                                 child: Align(
@@ -594,7 +597,7 @@ class Status extends StatelessWidget {
                                     width: 32.11*fem,
                                     height: 33.06*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/ellipse-6.png',
+                                      'assets/page-1/images/ellipse-6-eju.png',
                                       width: 32.11*fem,
                                       height: 33.06*fem,
                                     ),
@@ -602,7 +605,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // s1vWf (112:53)
+                                // s1Byu (112:53)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -610,7 +613,7 @@ class Status extends StatelessWidget {
                                     width: 52.38*fem,
                                     height: 52.38*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/s1-JEP.png',
+                                      'assets/page-1/images/s1.png',
                                       width: 52.38*fem,
                                       height: 52.38*fem,
                                     ),
@@ -621,14 +624,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupnyubc8b (TGM9edRThoXH1i5rQwnYUB)
+                          // autogroup31nt65H (EJUkSqVG8DB1wAotKG31nT)
                           margin: EdgeInsets.fromLTRB(0*fem, 10.94*fem, 0*fem, 11.44*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // emmaWDy (112:49)
+                                // emmaD9u (112:49)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Emma',
@@ -642,7 +645,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesagoAZR (112:50)
+                                // minutesagouoR (112:50)
                                 '30 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -659,7 +662,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // text3dD (112:34)
+                    // textmqd (112:34)
                     margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 233.43*fem, 5.62*fem),
                     width: double.infinity,
                     height: 52.38*fem,
@@ -667,14 +670,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // statusX2b (112:40)
+                          // status1zs (112:40)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7.19*fem, 0*fem),
                           width: 52.38*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // ellipse6p1h (112:41)
+                                // ellipse6jR5 (112:41)
                                 left: 10*fem,
                                 top: 9.8549804688*fem,
                                 child: Align(
@@ -682,7 +685,7 @@ class Status extends StatelessWidget {
                                     width: 32.11*fem,
                                     height: 33.06*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/ellipse-6-mVD.png',
+                                      'assets/page-1/images/ellipse-6-tjD.png',
                                       width: 32.11*fem,
                                       height: 33.06*fem,
                                     ),
@@ -690,7 +693,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // s14Rq (112:42)
+                                // s1oA3 (112:42)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -698,7 +701,7 @@ class Status extends StatelessWidget {
                                     width: 52.38*fem,
                                     height: 52.38*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/s1-t3V.png',
+                                      'assets/page-1/images/s1-akb.png',
                                       width: 52.38*fem,
                                       height: 52.38*fem,
                                     ),
@@ -709,14 +712,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupmqouJLB (TGM8F16oc6cHZ7i7hiMQou)
+                          // autogroupbcipGZR (EJUjUCSyAAppUS22ZGBciP)
                           margin: EdgeInsets.fromLTRB(0*fem, 10.94*fem, 0*fem, 11.44*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // sandrineb4P (112:35)
+                                // sandrineNsM (112:35)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Sandrine',
@@ -730,7 +733,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesagorFD (112:36)
+                                // minutesago5Ws (112:36)
                                 '43 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -747,7 +750,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textMSs (112:56)
+                    // textNks (112:56)
                     margin: EdgeInsets.fromLTRB(5*fem, 0*fem, 231.43*fem, 5.37*fem),
                     width: double.infinity,
                     height: 53.63*fem,
@@ -755,14 +758,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // autogrouphxt334o (TGM6hP1UGLdm8tb4NFHxt3)
+                          // autogroup2qnseyH (EJUi9EfCxAN4ExaZYW2qNs)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.94*fem, 0*fem),
                           width: 53.63*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // statusLJo (112:59)
+                                // statusKZd (112:59)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -770,7 +773,7 @@ class Status extends StatelessWidget {
                                     width: 53.63*fem,
                                     height: 53.63*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/status-kWF.png',
+                                      'assets/page-1/images/status-fs1.png',
                                       width: 53.63*fem,
                                       height: 53.63*fem,
                                     ),
@@ -778,7 +781,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // statusoCP (112:61)
+                                // statuspWP (112:61)
                                 left: 0.1624755859*fem,
                                 top: 0.1623878479*fem,
                                 child: Container(
@@ -787,7 +790,7 @@ class Status extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse6VL7 (112:62)
+                                        // ellipse6jdM (112:62)
                                         left: 10.3562011719*fem,
                                         top: 11.3191947937*fem,
                                         child: Align(
@@ -795,7 +798,7 @@ class Status extends StatelessWidget {
                                             width: 32.04*fem,
                                             height: 32.04*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-3D5.png',
+                                              'assets/page-1/images/ellipse-6-jPy.png',
                                               width: 32.04*fem,
                                               height: 32.04*fem,
                                             ),
@@ -803,7 +806,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s19Qf (112:63)
+                                        // s1Eq1 (112:63)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -811,7 +814,7 @@ class Status extends StatelessWidget {
                                             width: 53.31*fem,
                                             height: 53.31*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1-TEK.png',
+                                              'assets/page-1/images/s1-SCb.png',
                                               width: 53.31*fem,
                                               height: 53.31*fem,
                                             ),
@@ -826,14 +829,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupt5xfcJF (TGM6pi8bEimqMDmmc8T5xf)
+                          // autogroupbxyh6sD (EJUiFjUP5xMJXAK1YwbxyH)
                           margin: EdgeInsets.fromLTRB(0*fem, 11.57*fem, 0*fem, 12.06*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // pearlWeX (112:57)
+                                // pearlNZq (112:57)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Pearl',
@@ -847,7 +850,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesagon6F (112:58)
+                                // minutesagofoq (112:58)
                                 '45 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -864,7 +867,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textUjm (113:2)
+                    // textCHy (113:2)
                     margin: EdgeInsets.fromLTRB(7*fem, 0*fem, 228.43*fem, 5.37*fem),
                     width: double.infinity,
                     height: 53.63*fem,
@@ -872,14 +875,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // autogrouptrrwNaF (TGM7Bx2CbjeueVpU1strrw)
+                          // autogrouppadyV2B (EJUiZonbfXrSGkSJt1paDy)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.94*fem, 0*fem),
                           width: 53.63*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // statusrkK (113:5)
+                                // statusQQ3 (113:5)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -887,7 +890,7 @@ class Status extends StatelessWidget {
                                     width: 53.63*fem,
                                     height: 53.63*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/status-uHM.png',
+                                      'assets/page-1/images/status.png',
                                       width: 53.63*fem,
                                       height: 53.63*fem,
                                     ),
@@ -895,7 +898,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // statusuMD (113:7)
+                                // status2gK (113:7)
                                 left: 0.1624755859*fem,
                                 top: 0.1623840332*fem,
                                 child: Container(
@@ -904,7 +907,7 @@ class Status extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse6yM5 (113:8)
+                                        // ellipse6woH (113:8)
                                         left: 10.3562011719*fem,
                                         top: 11.3191986084*fem,
                                         child: Align(
@@ -912,7 +915,7 @@ class Status extends StatelessWidget {
                                             width: 32.04*fem,
                                             height: 32.04*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-nBD.png',
+                                              'assets/page-1/images/ellipse-6-w7H.png',
                                               width: 32.04*fem,
                                               height: 32.04*fem,
                                             ),
@@ -920,7 +923,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s1dgX (113:9)
+                                        // s12Jw (113:9)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -928,7 +931,7 @@ class Status extends StatelessWidget {
                                             width: 53.31*fem,
                                             height: 53.31*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1-ktB.png',
+                                              'assets/page-1/images/s1-v2P.png',
                                               width: 53.31*fem,
                                               height: 53.31*fem,
                                             ),
@@ -943,14 +946,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupwbekguh (TGM7K7Uw1CZcg17XQfwBeK)
+                          // autogroupqjfmKJ3 (EJUigDmaWsDzxYDvxuqJfm)
                           margin: EdgeInsets.fromLTRB(0*fem, 11.57*fem, 0*fem, 12.06*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // andrewBbZ (113:3)
+                                // andrewDPR (113:3)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Andrew',
@@ -964,7 +967,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // minutesago37y (113:4)
+                                // minutesagogno (113:4)
                                 '50 minutes ago',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -981,7 +984,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textwj9 (113:14)
+                    // textcRZ (113:14)
                     margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 234.43*fem, 4.65*fem),
                     width: double.infinity,
                     height: 52.38*fem,
@@ -989,14 +992,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // statusq3q (113:17)
+                          // status7md (113:17)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7.19*fem, 0*fem),
                           width: 52.38*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // ellipse6XhM (113:18)
+                                // ellipse6bRu (113:18)
                                 left: 10*fem,
                                 top: 9.8549957275*fem,
                                 child: Align(
@@ -1004,7 +1007,7 @@ class Status extends StatelessWidget {
                                     width: 32.11*fem,
                                     height: 33.06*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/ellipse-6-juu.png',
+                                      'assets/page-1/images/ellipse-6-qto.png',
                                       width: 32.11*fem,
                                       height: 33.06*fem,
                                     ),
@@ -1012,7 +1015,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // s116j (113:19)
+                                // s1fAs (113:19)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -1020,7 +1023,7 @@ class Status extends StatelessWidget {
                                     width: 52.38*fem,
                                     height: 52.38*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/s1-YB5.png',
+                                      'assets/page-1/images/s1-E5Z.png',
                                       width: 52.38*fem,
                                       height: 52.38*fem,
                                     ),
@@ -1031,14 +1034,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupov9yV1u (TGM8ieyPpSrvYBYSCMov9y)
+                          // autogroup7sekKWK (EJUjhcEHr3sizuD4Bs7seK)
                           margin: EdgeInsets.fromLTRB(0*fem, 10.94*fem, 0*fem, 11.44*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // naomizUT (113:15)
+                                // naomiR3Z (113:15)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Naomi',
@@ -1052,7 +1055,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // today200pm5F1 (113:16)
+                                // today200pmeS7 (113:16)
                                 'Today, 2:00 PM',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -1069,7 +1072,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // textahZ (113:22)
+                    // textA9Z (113:22)
                     margin: EdgeInsets.fromLTRB(2.03*fem, 0*fem, 237.43*fem, 4.65*fem),
                     width: double.infinity,
                     height: 54.33*fem,
@@ -1077,14 +1080,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // statusfj1 (113:25)
+                          // status4kj (113:25)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.21*fem, 0*fem),
                           width: 54.33*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // ellipse6MLw (113:26)
+                                // ellipse6BqM (113:26)
                                 left: 10.9744873047*fem,
                                 top: 10.8294677734*fem,
                                 child: Align(
@@ -1092,7 +1095,7 @@ class Status extends StatelessWidget {
                                     width: 32.11*fem,
                                     height: 33.06*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/ellipse-6-5bH.png',
+                                      'assets/page-1/images/ellipse-6.png',
                                       width: 32.11*fem,
                                       height: 33.06*fem,
                                     ),
@@ -1100,7 +1103,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // s1eUT (113:27)
+                                // s13Mm (113:27)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -1108,7 +1111,7 @@ class Status extends StatelessWidget {
                                     width: 54.33*fem,
                                     height: 54.33*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/s1-Pum.png',
+                                      'assets/page-1/images/s1-1i3.png',
                                       width: 54.33*fem,
                                       height: 54.33*fem,
                                     ),
@@ -1119,14 +1122,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupoxoytdh (TGM9LtS2G4Usdmjrn3oXoy)
+                          // autogroupkmxoHmu (EJUkCvimjaS1rDwu9PkMxo)
                           margin: EdgeInsets.fromLTRB(0*fem, 11.92*fem, 0*fem, 12.41*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // slyBsh (113:23)
+                                // sly1T1 (113:23)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Sly',
@@ -1140,7 +1143,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // today150pm4Ao (113:24)
+                                // today150pmu2b (113:24)
                                 'Today, 1:50 PM',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -1157,7 +1160,7 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // text9CF (115:34)
+                    // textbg7 (115:34)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 240.43*fem, 5.37*fem),
                     width: double.infinity,
                     height: 53.63*fem,
@@ -1165,14 +1168,14 @@ class Status extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // autogroupbpkpddD (TGM7d6xxJKT4qBHzpCbPkP)
+                          // autogroupxhxoJaX (EJUizsuA5f2us1y1knxhxo)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.94*fem, 0*fem),
                           width: 53.63*fem,
                           height: double.infinity,
                           child: Stack(
                             children: [
                               Positioned(
-                                // statusjAT (115:37)
+                                // status2Fd (115:37)
                                 left: 0*fem,
                                 top: 0*fem,
                                 child: Align(
@@ -1180,7 +1183,7 @@ class Status extends StatelessWidget {
                                     width: 53.63*fem,
                                     height: 53.63*fem,
                                     child: Image.asset(
-                                      'assets/page-1/images/status.png',
+                                      'assets/page-1/images/status-4Fm.png',
                                       width: 53.63*fem,
                                       height: 53.63*fem,
                                     ),
@@ -1188,7 +1191,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                // statusQ1h (115:39)
+                                // statuss1M (115:39)
                                 left: 0.1624755859*fem,
                                 top: 0.1623840332*fem,
                                 child: Container(
@@ -1197,7 +1200,7 @@ class Status extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse65tX (115:40)
+                                        // ellipse67gP (115:40)
                                         left: 10.3562011719*fem,
                                         top: 11.3191833496*fem,
                                         child: Align(
@@ -1205,7 +1208,7 @@ class Status extends StatelessWidget {
                                             width: 32.04*fem,
                                             height: 32.04*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-HzT.png',
+                                              'assets/page-1/images/ellipse-6-Hym.png',
                                               width: 32.04*fem,
                                               height: 32.04*fem,
                                             ),
@@ -1213,7 +1216,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s1Mb9 (115:41)
+                                        // s1p51 (115:41)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -1221,7 +1224,7 @@ class Status extends StatelessWidget {
                                             width: 53.31*fem,
                                             height: 53.31*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1-5S3.png',
+                                              'assets/page-1/images/s1-9RV.png',
                                               width: 53.31*fem,
                                               height: 53.31*fem,
                                             ),
@@ -1236,14 +1239,14 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // autogroupdixmdYf (TGM7kGRghnMmrgb4CzdiXm)
+                          // autogroupcczyJks (EJUj9d9asqdbANDmgvccZy)
                           margin: EdgeInsets.fromLTRB(0*fem, 11.57*fem, 0*fem, 12.06*fem),
                           height: double.infinity,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // judeKAb (115:35)
+                                // judepz7 (115:35)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 child: Text(
                                   'Jude',
@@ -1257,7 +1260,7 @@ class Status extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // today145pmBib (115:36)
+                                // today145pmLBm (115:36)
                                 'Today, 1:45 PM',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -1274,14 +1277,14 @@ class Status extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // autogroupax67VjH (TGM3oP14tmjsQAxVKmax67)
+                    // autogroupfx4spcj (EJUfgivLR1j44aCpzXFx4s)
                     margin: EdgeInsets.fromLTRB(4*fem, 0*fem, 0*fem, 0*fem),
                     width: 132.57*fem,
                     height: 102.38*fem,
                     child: Stack(
                       children: [
                         Positioned(
-                          // textaVq (115:46)
+                          // text6aF (115:46)
                           left: 1*fem,
                           top: 50*fem,
                           child: Container(
@@ -1291,14 +1294,14 @@ class Status extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
-                                  // statuseVh (115:49)
+                                  // statusQL3 (115:49)
                                   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7.19*fem, 0*fem),
                                   width: 52.38*fem,
                                   height: double.infinity,
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse6k2w (115:50)
+                                        // ellipse6vZH (115:50)
                                         left: 10*fem,
                                         top: 9.8549499512*fem,
                                         child: Align(
@@ -1306,7 +1309,7 @@ class Status extends StatelessWidget {
                                             width: 32.11*fem,
                                             height: 33.06*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-GT5.png',
+                                              'assets/page-1/images/ellipse-6-mwh.png',
                                               width: 32.11*fem,
                                               height: 33.06*fem,
                                             ),
@@ -1314,7 +1317,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s1xeo (115:51)
+                                        // s1MPh (115:51)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -1322,7 +1325,7 @@ class Status extends StatelessWidget {
                                             width: 52.38*fem,
                                             height: 52.38*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1-mFR.png',
+                                              'assets/page-1/images/s1-x2P.png',
                                               width: 52.38*fem,
                                               height: 52.38*fem,
                                             ),
@@ -1333,14 +1336,14 @@ class Status extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  // autogroupzqd1dW3 (TGM43TRwrKiEfwi8LizQD1)
+                                  // autogroupdorbSg3 (EJUfv3sTpSAGzdT2hadorB)
                                   margin: EdgeInsets.fromLTRB(0*fem, 10.94*fem, 0*fem, 11.44*fem),
                                   height: double.infinity,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        // serge8Bu (115:47)
+                                        // sergeupX (115:47)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                         child: Text(
                                           'Serge',
@@ -1354,7 +1357,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Text(
-                                        // today1100amPtX (115:48)
+                                        // today1100am1cf (115:48)
                                         'Today, 11:00 AM',
                                         style: SafeGoogleFont (
                                           'Quicksand',
@@ -1372,7 +1375,7 @@ class Status extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          // textgsd (115:18)
+                          // texttwM (115:18)
                           left: 0*fem,
                           top: 0*fem,
                           child: Container(
@@ -1382,14 +1385,14 @@ class Status extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
-                                  // statusAno (115:21)
+                                  // statuszzP (115:21)
                                   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 6.21*fem, 0*fem),
                                   width: 54.33*fem,
                                   height: double.infinity,
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // ellipse6G59 (115:22)
+                                        // ellipse6Whq (115:22)
                                         left: 10.9744873047*fem,
                                         top: 10.8294677734*fem,
                                         child: Align(
@@ -1397,7 +1400,7 @@ class Status extends StatelessWidget {
                                             width: 32.11*fem,
                                             height: 33.06*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/ellipse-6-vkj.png',
+                                              'assets/page-1/images/ellipse-6-FEs.png',
                                               width: 32.11*fem,
                                               height: 33.06*fem,
                                             ),
@@ -1405,7 +1408,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // s1KJK (115:23)
+                                        // s1ogw (115:23)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -1413,7 +1416,7 @@ class Status extends StatelessWidget {
                                             width: 54.33*fem,
                                             height: 54.33*fem,
                                             child: Image.asset(
-                                              'assets/page-1/images/s1.png',
+                                              'assets/page-1/images/s1-yx7.png',
                                               width: 54.33*fem,
                                               height: 54.33*fem,
                                             ),
@@ -1424,14 +1427,14 @@ class Status extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  // autogroupeck5xcB (TGM4MSuy9Sbgq7tbkFecK5)
+                                  // autogroupqfibCDH (EJUgAYTKCHD4ETvoLFqFiB)
                                   margin: EdgeInsets.fromLTRB(0*fem, 11.92*fem, 0*fem, 12.41*fem),
                                   height: double.infinity,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        // beryleV1 (115:19)
+                                        // beryl3jh (115:19)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                         child: Text(
                                           'Beryl',
@@ -1445,7 +1448,7 @@ class Status extends StatelessWidget {
                                         ),
                                       ),
                                       Text(
-                                        // today130pmK5M (115:20)
+                                        // today130pmqvT (115:20)
                                         'Today, 1:30 PM',
                                         style: SafeGoogleFont (
                                           'Quicksand',

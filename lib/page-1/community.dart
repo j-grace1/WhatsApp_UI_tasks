@@ -1,36 +1,33 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
+import 'package:myapp/imports.dart';
 
 class Community extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 394;
+    double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Container(
       width: double.infinity,
       child: Container(
-        // communityXET (80:2)
+        // communityBHu (80:2)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xfff3f3f3),
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // autogroupe1cwAHR (TGLtwoRV9JJgxYMm2mE1cw)
+              // autogroupmszmq7Z (EJUY2cM1LFPCTFyCdJmsZM)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
-              width: 390*fem,
+              width: double.infinity,
               height: 184*fem,
               child: Stack(
                 children: [
 
                   Positioned(
-                    // headerLRR (80:129)
+                    // headerzDy (80:129)
                     left: 0*fem,
                     top: 115*fem,
                     child: Container(
@@ -44,7 +41,7 @@ class Community extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // default9dm (80:136)
+                            // defaultEe7 (80:136)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 0*fem),
                             width: 38*fem,
                             height: double.infinity,
@@ -55,7 +52,7 @@ class Community extends StatelessWidget {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  // peopleskintype8pju (80:121)
+                                  // peopleskintype88Ub (80:121)
                                   left: 5*fem,
                                   top: 5*fem,
                                   child: Align(
@@ -70,7 +67,7 @@ class Community extends StatelessWidget {
                                   ),
                                 ),
                                 Positioned(
-                                  // vector5A3 (80:153)
+                                  // vectorBBy (80:153)
                                   left: 24*fem,
                                   top: 23*fem,
                                   child: Align(
@@ -78,7 +75,7 @@ class Community extends StatelessWidget {
                                       width: 14*fem,
                                       height: 14*fem,
                                       child: Image.asset(
-                                        'assets/page-1/images/vector-sqm.png',
+                                        'assets/page-1/images/vector.png',
                                         width: 14*fem,
                                         height: 14*fem,
                                       ),
@@ -89,7 +86,7 @@ class Community extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // newcommunityM15 (80:128)
+                            // newcommunitySdh (80:128)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 1*fem),
                             child: Text(
                               'New community',
@@ -110,9 +107,9 @@ class Community extends StatelessWidget {
               ),
             ),
             Container(
-              // commmunityCXV (80:130)
+              // commmunity6TM (80:130)
               padding: EdgeInsets.fromLTRB(0*fem, 18*fem, 0*fem, 0*fem),
-              width: 390*fem,
+              width: double.infinity,
               decoration: BoxDecoration (
                 color: Color(0xffffffff),
               ),
@@ -120,7 +117,7 @@ class Community extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // title4Zh (80:214)
+                    // titlehxw (80:214)
                     padding: EdgeInsets.fromLTRB(19*fem, 0*fem, 19*fem, 0*fem),
                     width: double.infinity,
                     height: 44.5*fem,
@@ -128,27 +125,27 @@ class Community extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10*fem),
                     ),
                     child: Container(
-                      // autogroupsgbux9H (TGLyhqADa38yEj1zRxSgBu)
+                      // autogroup3gcbpGs (EJUcEjqE5Eb2VKayT73gCb)
                       width: 160*fem,
                       height: 37*fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            // rectangle5FeB (80:138)
+                            // rectangle594F (80:138)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 0*fem),
                             width: 38*fem,
                             height: 37*fem,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10*fem),
                               child: Image.asset(
-                                'assets/page-1/images/rectangle-5.png',
+                                'assets/page-1/images/rectangle-5-c1h.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Container(
-                            // gdgbamenda7gP (80:142)
+                            // gdgbamendaD47 (80:142)
                             margin: EdgeInsets.fromLTRB(0*fem, 3*fem, 0*fem, 0*fem),
                             child: Text(
                               'GDG Bamenda',
@@ -166,21 +163,21 @@ class Community extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // autogroupxcktzEP (TGLwrYue4zjj2yVmP8xckT)
+                    // autogroupq7c7tvw (EJUaZncmm6URrmHCskq7C7)
                     padding: EdgeInsets.fromLTRB(22*fem, 13.5*fem, 14*fem, 17*fem),
                     width: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // chatrGb (80:83)
+                          // chatCgj (80:83)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 24*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // avatarksm (80:169)
+                                // avatarhtP (80:169)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -191,14 +188,14 @@ class Community extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // autogroupwtwb2qH (TGLx7YUf9bUbqHeVZ5WTWB)
+                                // autogroupezponQ3 (EJUao2jht4HyCQaafGeZpo)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 width: 303*fem,
                                 height: 35*fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                      // chat7rj (80:88)
+                                      // chatfyd (80:88)
                                       left: 0*fem,
                                       top: 0*fem,
                                       child: Container(
@@ -208,7 +205,7 @@ class Community extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // gdgbamendazvX (80:85)
+                                              // gdgbamendawRM (80:85)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                               child: Text(
                                                 'GDG Bamenda',
@@ -237,7 +234,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
-                                      // yesterdaywzB (80:91)
+                                      // yesterday1Zd (80:91)
                                       left: 256*fem,
                                       top: 1*fem,
                                       child: Align(
@@ -264,14 +261,14 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // chatB7q (80:170)
+                          // chatkvX (80:170)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 24*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // ellipse44xK (80:172)
+                                // ellipse4Gdy (80:172)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -280,20 +277,20 @@ class Community extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/page-1/images/ellipse-4-bg-7ZV.png',
+                                      'assets/page-1/images/ellipse-4-bg-iTD.png',
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                // autogrouppbsruCF (TGLyCWfjgWagPQH9URpBsR)
+                                // autogroupz1ydKs9 (EJUbgfvKpZjD4Nes2cz1yd)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 width: 303*fem,
                                 height: 35*fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                      // chatnG3 (80:174)
+                                      // chatc5Z (80:174)
                                       left: 0*fem,
                                       top: 0*fem,
                                       child: Container(
@@ -303,7 +300,7 @@ class Community extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // gdgbamendabamendamembersrWo (80:176)
+                                              // gdgbamendabamendamembersVQF (80:176)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                               child: Text(
                                                 'GDG Bamenda Bamenda Members',
@@ -332,7 +329,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
-                                      // timecountoKZ (80:177)
+                                      // timecountV2s (80:177)
                                       left: 256*fem,
                                       top: 1*fem,
                                       child: Container(
@@ -342,7 +339,7 @@ class Community extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.end,
                                           children: [
                                             Container(
-                                              // yesterday52B (80:179)
+                                              // yesterdayZoR (80:179)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                                               child: Text(
                                                 'Yesterday',
@@ -356,12 +353,12 @@ class Community extends StatelessWidget {
                                               ),
                                             ),
                                             Container(
-                                              // ellipse1YwM (80:178)
+                                              // ellipse14kB (80:178)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 2*fem, 0*fem),
                                               width: 7*fem,
                                               height: 7*fem,
                                               child: Image.asset(
-                                                'assets/page-1/images/ellipse-1-BTh.png',
+                                                'assets/page-1/images/ellipse-1-joy.png',
                                                 width: 7*fem,
                                                 height: 7*fem,
                                               ),
@@ -377,14 +374,14 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // chatqQf (80:180)
+                          // chatNF5 (80:180)
                           margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 31*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // ellipse4k1q (80:182)
+                                // ellipse4fV5 (80:182)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -393,20 +390,20 @@ class Community extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/page-1/images/ellipse-4-bg-Ckb.png',
+                                      'assets/page-1/images/ellipse-4-bg-8nF.png',
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                // autogroupvd7yZjy (TGLxWs98c5jjxtKr3RvD7y)
+                                // autogroup7w7mFTH (EJUbDrMgSodQ1SGomR7W7m)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 width: 303*fem,
                                 height: 35*fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
-                                      // chatouD (80:183)
+                                      // chatxcb (80:183)
                                       left: 0*fem,
                                       top: 0*fem,
                                       child: Container(
@@ -416,7 +413,7 @@ class Community extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              // womentechmakersbamendacLs (80:185)
+                                              // womentechmakersbamendacx3 (80:185)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                               child: Text(
                                                 'Women TechMakers Bamenda',
@@ -445,7 +442,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
-                                      // timecountfyM (80:186)
+                                      // timecountw79 (80:186)
                                       left: 256*fem,
                                       top: 1*fem,
                                       child: Container(
@@ -455,7 +452,7 @@ class Community extends StatelessWidget {
                                           crossAxisAlignment: CrossAxisAlignment.end,
                                           children: [
                                             Container(
-                                              // yesterday9dd (80:188)
+                                              // yesterdaySpb (80:188)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                                               child: Text(
                                                 'Yesterday',
@@ -469,12 +466,12 @@ class Community extends StatelessWidget {
                                               ),
                                             ),
                                             Container(
-                                              // ellipse1bVd (80:187)
+                                              // ellipse1giw (80:187)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 2*fem, 0*fem),
                                               width: 7*fem,
                                               height: 7*fem,
                                               child: Image.asset(
-                                                'assets/page-1/images/ellipse-1-SFD.png',
+                                                'assets/page-1/images/ellipse-1-CjV.png',
                                                 width: 7*fem,
                                                 height: 7*fem,
                                               ),
@@ -490,25 +487,25 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // view59u (80:213)
+                          // viewbL7 (80:213)
                           margin: EdgeInsets.fromLTRB(21*fem, 0*fem, 260*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // iconchevronrightxzP (80:192)
+                                // iconchevronrighttq1 (80:192)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 25.1*fem, 0*fem),
                                 width: 4.9*fem,
                                 height: 6*fem,
                                 child: Image.asset(
-                                  'assets/page-1/images/icon-chevron-right-WMZ.png',
+                                  'assets/page-1/images/icon-chevron-right-N8b.png',
                                   width: 4.9*fem,
                                   height: 6*fem,
                                 ),
                               ),
                               Text(
-                                // viewall1By (80:193)
+                                // viewallxps (80:193)
                                 'View all',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -528,10 +525,10 @@ class Community extends StatelessWidget {
               ),
             ),
             Container(
-              // commmunityH9V (80:215)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 13*fem),
+              // commmunity5uV (80:215)
+              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 13*fem),
               padding: EdgeInsets.fromLTRB(0*fem, 18*fem, 0*fem, 0*fem),
-              width: 390*fem,
+              width: double.infinity,
               decoration: BoxDecoration (
                 color: Color(0xffffffff),
               ),
@@ -539,7 +536,7 @@ class Community extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // titleQtK (80:217)
+                    // titleAg3 (80:217)
                     padding: EdgeInsets.fromLTRB(19*fem, 0*fem, 19*fem, 0*fem),
                     width: double.infinity,
                     height: 44.5*fem,
@@ -547,27 +544,27 @@ class Community extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10*fem),
                     ),
                     child: Container(
-                      // autogroupdswb3wH (TGM2JkpjmXuvLosBDtdsWb)
+                      // autogroupzvyre5R (EJUeRG2k8H6xkSU4kcZvyR)
                       width: 168*fem,
                       height: 37*fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            // rectangle5wFy (80:220)
+                            // rectangle5ZiB (80:220)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 0*fem),
                             width: 38*fem,
                             height: 37*fem,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10*fem),
                               child: Image.asset(
-                                'assets/page-1/images/rectangle-5-Zaj.png',
+                                'assets/page-1/images/rectangle-5.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Container(
-                            // gdscbamendayTZ (80:219)
+                            // gdscbamendaosR (80:219)
                             margin: EdgeInsets.fromLTRB(0*fem, 3*fem, 0*fem, 0*fem),
                             child: Text(
                               'GDSC Bamenda',
@@ -585,21 +582,21 @@ class Community extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // autogroupjfjsqVm (TGM13nvKBYyvb9oNXFJFJs)
+                    // autogroupaadrH1u (EJUdNsbhPb53b892T8aaDR)
                     padding: EdgeInsets.fromLTRB(22*fem, 13.5*fem, 15*fem, 17*fem),
                     width: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          // chatiJf (80:221)
+                          // chatnUT (80:221)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 24*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // ellipse41Yf (80:223)
+                                // ellipse4i7D (80:223)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -614,21 +611,21 @@ class Community extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // chatGjV (80:225)
+                                // chatzKd (80:225)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                 width: 303*fem,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Container(
-                                      // autogroupkta3mRM (TGM1NCZJtxwniPhyYVkTA3)
+                                      // autogroupsnapWHy (EJUdgSvkGQt5nEbNEwSnaP)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                       width: double.infinity,
                                       child: Row(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Container(
-                                            // googledeveloperstudentclububaE (80:227)
+                                            // googledeveloperstudentclububaq (80:227)
                                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 14*fem, 0*fem),
                                             child: Text(
                                               'Google Developer Student  Club UBa',
@@ -642,7 +639,7 @@ class Community extends StatelessWidget {
                                             ),
                                           ),
                                           Container(
-                                            // yesterdayfv3 (80:229)
+                                            // yesterdaySL3 (80:229)
                                             margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
                                             child: Text(
                                               'Yesterday',
@@ -676,14 +673,14 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // chatcio (80:239)
+                          // chatQgB (80:239)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 24*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // ellipse479m (80:241)
+                                // ellipse4h9V (80:241)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -692,19 +689,19 @@ class Community extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/page-1/images/ellipse-4-bg-TmD.png',
+                                      'assets/page-1/images/ellipse-4-bg-Cf5.png',
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                // chatKmd (80:242)
+                                // chatBKZ (80:242)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      // gdscuxuidesignbj9 (80:244)
+                                      // gdscuxuidesignW6w (80:244)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                       child: Text(
                                         'GDSC UX/UI Design',
@@ -718,7 +715,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // joinedfromthecommunity3b9 (80:243)
+                                      // joinedfromthecommunityjVV (80:243)
                                       '+237 6 54 31 28 03 joined from the community',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -732,7 +729,7 @@ class Community extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // wRd (80:247)
+                                // QrX (80:247)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 0*fem, 0*fem),
                                 child: Text(
                                   '30/02/23',
@@ -749,13 +746,13 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // chatcXm (80:230)
+                          // chati6X (80:230)
                           margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 31*fem),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                // ellipse47jR (80:232)
+                                // ellipse415d (80:232)
                                 margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 15*fem, 0*fem),
                                 width: 35*fem,
                                 height: 35*fem,
@@ -764,19 +761,19 @@ class Community extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/page-1/images/ellipse-4-bg-St3.png',
+                                      'assets/page-1/images/ellipse-4-bg-mK9.png',
                                     ),
                                   ),
                                 ),
                               ),
                               Container(
-                                // chatAhh (80:233)
+                                // chatRQF (80:233)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 0*fem),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      // gdscfrontend53y (80:235)
+                                      // gdscfrontendx9H (80:235)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                                       child: Text(
                                         'GDSC FrontEnd',
@@ -790,7 +787,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // joinedfromthecommunityjuD (80:234)
+                                      // joinedfromthecommunityeH1 (80:234)
                                       '+237 6 77 80 23 14  joined from the community',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -804,13 +801,13 @@ class Community extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountDpP (80:236)
+                                // timecountZ95 (80:236)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // 795 (80:238)
+                                      // rP5 (80:238)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                                       child: Text(
                                         '30/01/23',
@@ -824,7 +821,7 @@ class Community extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // ellipse1nW7 (80:237)
+                                      // ellipse1xS7 (80:237)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
                                       width: 7*fem,
                                       height: 7*fem,
@@ -840,14 +837,14 @@ class Community extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // view4iX (80:248)
+                          // viewTdm (80:248)
                           margin: EdgeInsets.fromLTRB(21*fem, 0*fem, 259*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // iconchevronrightMxX (80:249)
+                                // iconchevronrightz7u (80:249)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 25.1*fem, 0*fem),
                                 width: 4.9*fem,
                                 height: 6*fem,
@@ -858,7 +855,7 @@ class Community extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                // viewallDUw (80:251)
+                                // viewall36B (80:251)
                                 'View all',
                                 style: SafeGoogleFont (
                                   'Quicksand',
@@ -878,8 +875,8 @@ class Community extends StatelessWidget {
               ),
             ),
             Container(
-              // rectangle4JFV (80:253)
-              width: 390*fem,
+              // rectangle4KZV (80:253)
+              width: double.infinity,
               height: 40*fem,
               decoration: BoxDecoration (
                 color: Color(0xffffffff),

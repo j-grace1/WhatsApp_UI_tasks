@@ -1,10 +1,42 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
+import 'package:myapp/imports.dart';
 
-class dashboard extends StatelessWidget {
+class Dashboard extends StatelessWidget {
+
+  final Map<String, ChatWidget> chatWidgetMap = {
+    '1': ChatWidget(
+      containerWidth: 300,
+      containerHeight: 90,
+      imageAssetPath: 'assets/images/user1.png',
+      imagePadding: EdgeInsets.all(12),
+      name: 'John Doe',
+      message: 'Hey, what\'s up?',
+      time: '12:34 PM',
+      count: '2',
+    ),
+    '2': ChatWidget(
+      containerWidth: 300,
+      containerHeight: 90,
+      imageAssetPath: 'assets/images/user2.png',
+      imagePadding: EdgeInsets.all(12),
+      name: 'Jane Smith',
+      message: 'Nothing much, you?',
+      time: '1:02 PM',
+      count: '1',
+    ),
+    '3': ChatWidget(
+      containerWidth: 300,
+      containerHeight: 90,
+      imageAssetPath: 'assets/images/user3.png',
+      imagePadding: EdgeInsets.all(12),
+      name: 'Bob Johnson',
+      message: 'Just working on a project',
+      time: '2:30 PM',
+      count: '',
+    ),
+  };
+
+
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -13,64 +45,56 @@ class dashboard extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // dashboardyVM (72:2)
+        // dashboardkwV (72:2)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
-
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // tabTfR (72:22)
-              padding: EdgeInsets.fromLTRB(19*fem, 23*fem, 14*fem, 10*fem),
-              width: double.infinity,
-              decoration: BoxDecoration (
-                color: Color(0xff4ecb71),
-              ),
-
-            ),
-            Container(
-              // autogrouprtxu7s1 (TGLgAvCyyXwaLF6APsRtXu)
+              // autogrouph1etAHh (EJUMkQUS5ZeqS5epYYH1eT)
               padding: EdgeInsets.fromLTRB(19*fem, 37*fem, 14*fem, 14*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                 
                   Container(
-                    // chatUqy (73:66)
+                    // chatqej (73:66)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3BVV (73:57)
+                          // ellipse38dq (73:57)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-oo1.png',
+                            'assets/page-1/images/ellipse-3-z9R.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogroupmwajsNK (TGLhPtAjkW7BqzU8wTMwAj)
+                          // autogroupjzjqes5 (EJUP82rRNFoSemLj6iJZjq)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogroupyesxvbV (TGLhDPUDzgbB5yN2ctyeSX)
+                                // autogroupd4o5wLP (EJUNxY8F1wfd1haXrgd4o5)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 122*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // divinaAkj (73:59)
+                                      // divina4A7 (73:59)
                                       'Divina',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -81,7 +105,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // bringmyfufutomorrowFnB (73:60)
+                                      // bringmyfufutomorrowVmD (73:60)
                                       'Bring my fufu tomorrow',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -95,14 +119,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountYFV (73:65)
+                                // timecountyAb (73:65)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pmpD1 (73:61)
+                                      // pmk4s (73:61)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -116,13 +140,13 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count124B (73:62)
+                                      // count1QfD (73:62)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1XWj (73:63)
+                                            // ellipse1LYs (73:63)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -130,7 +154,7 @@ class dashboard extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-LAP.png',
+                                                  'assets/page-1/images/ellipse-1-qb1.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -138,7 +162,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // ZTR (73:64)
+                                            // qVd (73:64)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -174,38 +198,38 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // chat7tF (73:67)
+                    // chatfDm (73:67)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3QcT (73:68)
+                          // ellipse3AgK (73:68)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-oxP.png',
+                            'assets/page-1/images/ellipse-3-MhV.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogroup66zffoH (TGLiRBoFoE9EHwWSEs66zf)
+                          // autogroupwv9dtsD (EJUPu6PftWdke7jjY5WV9d)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogroup5ovmYcB (TGLiFwZfJHrTS7aimU5oVm)
+                                // autogroup2ztm1gw (EJUPjBWX7uRX2zFQgL2zTm)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 194*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // juvitusppb (73:69)
+                                      // juvitusunK (73:69)
                                       'Juvitus',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -216,7 +240,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // mychangeKmM (73:70)
+                                      // mychange1KZ (73:70)
                                       'My change',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -230,14 +254,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountnQ3 (73:71)
+                                // timecountijm (73:71)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pmF2j (73:75)
+                                      // pmFNK (73:75)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -251,13 +275,13 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count1Uw5 (73:72)
+                                      // count1Ezw (73:72)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1ysq (73:73)
+                                            // ellipse1kCb (73:73)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -265,7 +289,7 @@ class dashboard extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-nbD.png',
+                                                  'assets/page-1/images/ellipse-1-NwM.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -273,7 +297,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // buD (73:74)
+                                            // eYs (73:74)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -309,38 +333,38 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // chatQLs (73:76)
+                    // chatK2j (73:76)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3uYX (73:77)
+                          // ellipse3d3R (73:77)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-vRR.png',
+                            'assets/page-1/images/ellipse-3-WhH.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogrouphjrm15m (TGLj2AnxyxXwVLXTyPhjRM)
+                          // autogroupbcgbx5h (EJUQfzGXqrEhSeF68MbcGB)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogroupj2g3Hoy (TGLisg3839nJyE7Botj2G3)
+                                // autogroup4vxfz2P (EJUQXQgVcasPL7sz3K4VxF)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 154*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // deblaqQ7u (73:78)
+                                      // deblaq771 (73:78)
                                       'De blaq',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -351,7 +375,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // thatjuicenahow7HD (73:79)
+                                      // thatjuicenahowEBd (73:79)
                                       'That  juice na how',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -365,14 +389,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountNU3 (73:80)
+                                // timecountYi7 (73:80)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pm1mu (73:84)
+                                      // pm4gT (73:84)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -386,13 +410,13 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count1CrP (73:81)
+                                      // count1m55 (73:81)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1hYF (73:82)
+                                            // ellipse1pJF (73:82)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -400,7 +424,7 @@ class dashboard extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-rNF.png',
+                                                  'assets/page-1/images/ellipse-1-TQo.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -408,7 +432,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // wSb (73:83)
+                                            // eo5 (73:83)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -444,38 +468,38 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // chatNXu (73:85)
+                    // chatsA3 (73:85)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3VcX (73:86)
+                          // ellipse3CTD (73:86)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-S5H.png',
+                            'assets/page-1/images/ellipse-3-hqm.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogroupfvnfzZH (TGLjzyVeWv7W8uCyaUfvnf)
+                          // autogroupurcwvPD (EJURJ44miYdHMQYrrxURcw)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogrouppsppssy (TGLjkytxqpkpTYQAV4pspP)
+                                // autogroupg7s9S6f (EJUR9Dz9duQvTeMH1HG7s9)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 189*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // sandrinekgs (73:87)
+                                      // sandrinevGj (73:87)
                                       'Sandrine',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -486,7 +510,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // mafufufYw (73:88)
+                                      // mafufu24s (73:88)
                                       'ma fufu',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -500,14 +524,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountMwZ (73:89)
+                                // timecountjzs (73:89)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pmG2w (73:93)
+                                      // pmfNj (73:93)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -521,13 +545,283 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count1kD1 (73:90)
+                                      // count1YSX (73:90)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1TdD (73:91)
+                                            // ellipse1gHq (73:91)
+                                            left: 0*fem,
+                                            top: 0.799987793*fem,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 12*fem,
+                                                height: 11.2*fem,
+                                                child: Image.asset(
+                                                  'assets/page-1/images/ellipse-1-o5M.png',
+                                                  width: 12*fem,
+                                                  height: 11.2*fem,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            // 9hD (73:92)
+                                            left: 3*fem,
+                                            top: 0*fem,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 6*fem,
+                                                height: 13*fem,
+                                                child: Text(
+                                                  '8',
+                                                  style: SafeGoogleFont (
+                                                    'Quicksand',
+                                                    fontSize: 10*ffem,
+                                                    fontWeight: FontWeight.w700,
+                                                    height: 1.25*ffem/fem,
+                                                    color: Color(0xfff9f9f9),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 23*fem,
+                  ),
+                  Container(
+                    // chatB87 (73:94)
+                    width: double.infinity,
+                    height: 47*fem,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          // ellipse3upo (73:95)
+                          width: 49*fem,
+                          height: 47*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/ellipse-3-XJb.png',
+                            width: 49*fem,
+                            height: 47*fem,
+                          ),
+                        ),
+                        Container(
+                          // autogroup2sntEs5 (EJURsY6yo1whsNZ1yh2sNT)
+                          padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
+                          height: double.infinity,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                // autogroup5kyjL9R (EJURjnptQLjDgyeB865kYj)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 202*fem, 0*fem),
+                                height: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      // syntishSiF (73:96)
+                                      'Syntish',
+                                      style: SafeGoogleFont (
+                                        'Quicksand',
+                                        fontSize: 16*ffem,
+                                        fontWeight: FontWeight.w500,
+                                        height: 1.25*ffem/fem,
+                                        color: Color(0xff1e1e1e),
+                                      ),
+                                    ),
+                                    Text(
+                                      // myjuiceyCP (73:97)
+                                      'my juice',
+                                      style: SafeGoogleFont (
+                                        'Quicksand',
+                                        fontSize: 12*ffem,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.25*ffem/fem,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                // timecounthPH (73:98)
+                                margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
+                                height: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      // pmpD1 (73:102)
+                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
+                                      child: Text(
+                                        '7:03 PM',
+                                        style: SafeGoogleFont (
+                                          'Quicksand',
+                                          fontSize: 12*ffem,
+                                          fontWeight: FontWeight.w700,
+                                          height: 1.25*ffem/fem,
+                                          color: Color(0xff4ecb71),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      // count1UHZ (73:99)
+                                      width: 12*fem,
+                                      height: 13*fem,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            // ellipse19Ph (73:100)
+                                            left: 0*fem,
+                                            top: 0.799987793*fem,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 12*fem,
+                                                height: 11.2*fem,
+                                                child: Image.asset(
+                                                  'assets/page-1/images/ellipse-1-Ds9.png',
+                                                  width: 12*fem,
+                                                  height: 11.2*fem,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            // 3zs (73:101)
+                                            left: 3*fem,
+                                            top: 0*fem,
+                                            child: Align(
+                                              child: SizedBox(
+                                                width: 6*fem,
+                                                height: 13*fem,
+                                                child: Text(
+                                                  '8',
+                                                  style: SafeGoogleFont (
+                                                    'Quicksand',
+                                                    fontSize: 10*ffem,
+                                                    fontWeight: FontWeight.w700,
+                                                    height: 1.25*ffem/fem,
+                                                    color: Color(0xfff9f9f9),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 23*fem,
+                  ),
+                  Container(
+                    // chatHuD (73:103)
+                    width: double.infinity,
+                    height: 47*fem,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          // ellipse3E3m (73:104)
+                          width: 49*fem,
+                          height: 47*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/ellipse-3-tWF.png',
+                            width: 49*fem,
+                            height: 47*fem,
+                          ),
+                        ),
+                        Container(
+                          // autogroup8ysuJ3d (EJUSPXF1xDRTTzrUKa8Ysu)
+                          padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
+                          height: double.infinity,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                // autogroupedf9c4K (EJUSGScUqD8S2uWErKedF9)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 151*fem, 0*fem),
+                                height: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      // albrightvao (73:105)
+                                      'Albright',
+                                      style: SafeGoogleFont (
+                                        'Quicksand',
+                                        fontSize: 16*ffem,
+                                        fontWeight: FontWeight.w500,
+                                        height: 1.25*ffem/fem,
+                                        color: Color(0xff1e1e1e),
+                                      ),
+                                    ),
+                                    Text(
+                                      // thisworkisforyourDZ (73:106)
+                                      'this work is for you',
+                                      style: SafeGoogleFont (
+                                        'Quicksand',
+                                        fontSize: 12*ffem,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.25*ffem/fem,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                // timecountMRD (73:107)
+                                margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
+                                height: double.infinity,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      // pmFWb (73:111)
+                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
+                                      child: Text(
+                                        '7:03 PM',
+                                        style: SafeGoogleFont (
+                                          'Quicksand',
+                                          fontSize: 12*ffem,
+                                          fontWeight: FontWeight.w700,
+                                          height: 1.25*ffem/fem,
+                                          color: Color(0xff4ecb71),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      // count1w8X (73:108)
+                                      width: 12*fem,
+                                      height: 13*fem,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            // ellipse1fqD (73:109)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -543,7 +837,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // iZ9 (73:92)
+                                            // 9kP (73:110)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -579,308 +873,38 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // chatwwh (73:94)
+                    // chatCyZ (73:112)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3UAw (73:95)
+                          // ellipse3YXd (73:113)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-o7R.png',
+                            'assets/page-1/images/ellipse-3-rY3.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogrouprgomydV (TGLkiTJXqSVTcVxTKSrgom)
+                          // autogroupkcfv5Gf (EJUSwfz7VLtxVMjQfbkcFV)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogroupgppfsD5 (TGLkYNkzVv3rpYaUccGPpf)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 202*fem, 0*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      // syntishxEX (73:96)
-                                      'Syntish',
-                                      style: SafeGoogleFont (
-                                        'Quicksand',
-                                        fontSize: 16*ffem,
-                                        fontWeight: FontWeight.w500,
-                                        height: 1.25*ffem/fem,
-                                        color: Color(0xff1e1e1e),
-                                      ),
-                                    ),
-                                    Text(
-                                      // myjuicerao (73:97)
-                                      'my juice',
-                                      style: SafeGoogleFont (
-                                        'Quicksand',
-                                        fontSize: 12*ffem,
-                                        fontWeight: FontWeight.w400,
-                                        height: 1.25*ffem/fem,
-                                        color: Color(0xff000000),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                // timecountAbV (73:98)
-                                margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      // pmeWf (73:102)
-                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                      child: Text(
-                                        '7:03 PM',
-                                        style: SafeGoogleFont (
-                                          'Quicksand',
-                                          fontSize: 12*ffem,
-                                          fontWeight: FontWeight.w700,
-                                          height: 1.25*ffem/fem,
-                                          color: Color(0xff4ecb71),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      // count18Aw (73:99)
-                                      width: 12*fem,
-                                      height: 13*fem,
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            // ellipse1FWT (73:100)
-                                            left: 0*fem,
-                                            top: 0.799987793*fem,
-                                            child: Align(
-                                              child: SizedBox(
-                                                width: 12*fem,
-                                                height: 11.2*fem,
-                                                child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-AKm.png',
-                                                  width: 12*fem,
-                                                  height: 11.2*fem,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Positioned(
-                                            // KFR (73:101)
-                                            left: 3*fem,
-                                            top: 0*fem,
-                                            child: Align(
-                                              child: SizedBox(
-                                                width: 6*fem,
-                                                height: 13*fem,
-                                                child: Text(
-                                                  '8',
-                                                  style: SafeGoogleFont (
-                                                    'Quicksand',
-                                                    fontSize: 10*ffem,
-                                                    fontWeight: FontWeight.w700,
-                                                    height: 1.25*ffem/fem,
-                                                    color: Color(0xfff9f9f9),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 23*fem,
-                  ),
-                  Container(
-                    // chatkLj (73:103)
-                    width: double.infinity,
-                    height: 47*fem,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          // ellipse3Tkw (73:104)
-                          width: 49*fem,
-                          height: 47*fem,
-                          child: Image.asset(
-                            'assets/page-1/images/ellipse-3-zaw.png',
-                            width: 49*fem,
-                            height: 47*fem,
-                          ),
-                        ),
-                        Container(
-                          // autogrouprs15yUP (TGLmQMKimFBSpFkEX5Rs15)
-                          padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
-                          height: double.infinity,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // autogroupg1uffc7 (TGLmAcDcwXfov8muCJG1Uf)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 151*fem, 0*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      // albrightZhV (73:105)
-                                      'Albright',
-                                      style: SafeGoogleFont (
-                                        'Quicksand',
-                                        fontSize: 16*ffem,
-                                        fontWeight: FontWeight.w500,
-                                        height: 1.25*ffem/fem,
-                                        color: Color(0xff1e1e1e),
-                                      ),
-                                    ),
-                                    Text(
-                                      // thisworkisforyou5Qw (73:106)
-                                      'this work is for you',
-                                      style: SafeGoogleFont (
-                                        'Quicksand',
-                                        fontSize: 12*ffem,
-                                        fontWeight: FontWeight.w400,
-                                        height: 1.25*ffem/fem,
-                                        color: Color(0xff000000),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Container(
-                                // timecountyWK (73:107)
-                                margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
-                                height: double.infinity,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Container(
-                                      // pmg9q (73:111)
-                                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
-                                      child: Text(
-                                        '7:03 PM',
-                                        style: SafeGoogleFont (
-                                          'Quicksand',
-                                          fontSize: 12*ffem,
-                                          fontWeight: FontWeight.w700,
-                                          height: 1.25*ffem/fem,
-                                          color: Color(0xff4ecb71),
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      // count19ZD (73:108)
-                                      width: 12*fem,
-                                      height: 13*fem,
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            // ellipse1Fs9 (73:109)
-                                            left: 0*fem,
-                                            top: 0.799987793*fem,
-                                            child: Align(
-                                              child: SizedBox(
-                                                width: 12*fem,
-                                                height: 11.2*fem,
-                                                child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-eaF.png',
-                                                  width: 12*fem,
-                                                  height: 11.2*fem,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Positioned(
-                                            // hz3 (73:110)
-                                            left: 3*fem,
-                                            top: 0*fem,
-                                            child: Align(
-                                              child: SizedBox(
-                                                width: 6*fem,
-                                                height: 13*fem,
-                                                child: Text(
-                                                  '8',
-                                                  style: SafeGoogleFont (
-                                                    'Quicksand',
-                                                    fontSize: 10*ffem,
-                                                    fontWeight: FontWeight.w700,
-                                                    height: 1.25*ffem/fem,
-                                                    color: Color(0xfff9f9f9),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 23*fem,
-                  ),
-                  Container(
-                    // chatLGK (73:112)
-                    width: double.infinity,
-                    height: 47*fem,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          // ellipse3rEf (73:113)
-                          width: 49*fem,
-                          height: 47*fem,
-                          child: Image.asset(
-                            'assets/page-1/images/ellipse-3.png',
-                            width: 49*fem,
-                            height: 47*fem,
-                          ),
-                        ),
-                        Container(
-                          // autogroupuxtfwX1 (TGLnGAE4Tf5fd92LaTUXtF)
-                          padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
-                          height: double.infinity,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // autogroup9rqdqMV (TGLn7AV3p6dwYYw6sh9RqD)
+                                // autogroup362fktb (EJUSpG2oEW9CgcbsWB362F)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 161*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // andrewvdq (73:114)
+                                      // andrewaMq (73:114)
                                       'Andrew',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -891,7 +915,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // sendthatmoneyqVu (73:115)
+                                      // sendthatmoneyHn3 (73:115)
                                       'send that money',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -905,14 +929,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountYfD (73:116)
+                                // timecountzRZ (73:116)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pmEY3 (73:120)
+                                      // pm7WB (73:120)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -926,13 +950,13 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count1iCK (73:117)
+                                      // count1Dp7 (73:117)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1RsR (73:118)
+                                            // ellipse1kp3 (73:118)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -940,7 +964,7 @@ class dashboard extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-foZ.png',
+                                                  'assets/page-1/images/ellipse-1-1qm.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -948,7 +972,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // W8B (73:119)
+                                            // fAK (73:119)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -984,38 +1008,38 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // chatZcF (73:121)
+                    // chatgbD (73:121)
                     width: double.infinity,
                     height: 47*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // ellipse3J43 (73:122)
+                          // ellipse3CJf (73:122)
                           width: 49*fem,
                           height: 47*fem,
                           child: Image.asset(
-                            'assets/page-1/images/ellipse-3-fS3.png',
+                            'assets/page-1/images/ellipse-3-8xb.png',
                             width: 49*fem,
                             height: 47*fem,
                           ),
                         ),
                         Container(
-                          // autogroupjmrd1UF (TGLnreEbwdnHG4NQmijmRD)
+                          // autogroupzytfJMh (EJUTdpVtGXRzUMMfdrzytf)
                           padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // autogrouppew5gaP (TGLnjeSG766wRNy1E1pEw5)
+                                // autogroupm5ohyij (EJUTUEwWdkgVEseeUHm5oH)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 163*fem, 0*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      // emman7d (73:123)
+                                      // emma6oM (73:123)
                                       'Emma',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -1026,7 +1050,7 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Text(
-                                      // thatcoinnahoweQj (73:124)
+                                      // thatcoinnahowRKq (73:124)
                                       'that coin na how',
                                       style: SafeGoogleFont (
                                         'Quicksand',
@@ -1040,14 +1064,14 @@ class dashboard extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // timecountYFD (73:125)
+                                // timecount59V (73:125)
                                 margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                 height: double.infinity,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      // pmEdq (73:129)
+                                      // pmZ4f (73:129)
                                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                       child: Text(
                                         '7:03 PM',
@@ -1061,13 +1085,13 @@ class dashboard extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      // count1HMD (73:126)
+                                      // count12U3 (73:126)
                                       width: 12*fem,
                                       height: 13*fem,
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            // ellipse1bMu (73:127)
+                                            // ellipse1ZTy (73:127)
                                             left: 0*fem,
                                             top: 0.799987793*fem,
                                             child: Align(
@@ -1075,7 +1099,7 @@ class dashboard extends StatelessWidget {
                                                 width: 12*fem,
                                                 height: 11.2*fem,
                                                 child: Image.asset(
-                                                  'assets/page-1/images/ellipse-1-vsm.png',
+                                                  'assets/page-1/images/ellipse-1-7bR.png',
                                                   width: 12*fem,
                                                   height: 11.2*fem,
                                                 ),
@@ -1083,7 +1107,7 @@ class dashboard extends StatelessWidget {
                                             ),
                                           ),
                                           Positioned(
-                                            // 3jh (73:128)
+                                            // 38F (73:128)
                                             left: 3*fem,
                                             top: 0*fem,
                                             child: Align(
@@ -1119,13 +1143,13 @@ class dashboard extends StatelessWidget {
                     height: 23*fem,
                   ),
                   Container(
-                    // autogroupcryxrSF (TGLe1PyoKzoqC5YzAtcRYX)
+                    // autogrouphchz5aj (EJUL8cqNYrvBMDGT3sHcHZ)
                     width: double.infinity,
                     height: 117*fem,
                     child: Stack(
                       children: [
                         Positioned(
-                          // chaticonZLf (73:56)
+                          // chaticon1UP (73:56)
                           left: 288*fem,
                           top: 25*fem,
                           child: Container(
@@ -1144,7 +1168,7 @@ class dashboard extends StatelessWidget {
                               ],
                             ),
                             child: Center(
-                              // chatbubblejeT (73:55)
+                              // chatbubbleQWX (73:55)
                               child: SizedBox(
                                 width: 30*fem,
                                 height: 33.53*fem,
@@ -1157,7 +1181,7 @@ class dashboard extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          // chatpR1 (73:130)
+                          // chathEj (73:130)
                           left: 0*fem,
                           top: 0*fem,
                           child: Container(
@@ -1167,31 +1191,31 @@ class dashboard extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
-                                  // ellipse3WHq (73:131)
+                                  // ellipse3CxB (73:131)
                                   width: 49*fem,
                                   height: 47*fem,
                                   child: Image.asset(
-                                    'assets/page-1/images/ellipse-3-Efu.png',
+                                    'assets/page-1/images/ellipse-3-3ud.png',
                                     width: 49*fem,
                                     height: 47*fem,
                                   ),
                                 ),
                                 Container(
-                                  // autogroupnsywbaB (TGLeaTs2zB3qjyq1fuNsYw)
+                                  // autogroupn8v7jBR (EJULaBw6fjnkVxU7Tun8v7)
                                   padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                                   height: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
-                                        // autogrouplyitUdy (TGLeQU9gw7DvYSPrtcLyiT)
+                                        // autogroupf37ycW7 (EJULQn37btGcTJek9Rf37y)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 165*fem, 0*fem),
                                         height: double.infinity,
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              // marcelaBD (73:132)
+                                              // marcelexb (73:132)
                                               'Marcel',
                                               style: SafeGoogleFont (
                                                 'Quicksand',
@@ -1202,7 +1226,7 @@ class dashboard extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              // sentthatmoneyUXV (73:133)
+                                              // sentthatmoneyiBm (73:133)
                                               'sent that money',
                                               style: SafeGoogleFont (
                                                 'Quicksand',
@@ -1216,14 +1240,14 @@ class dashboard extends StatelessWidget {
                                         ),
                                       ),
                                       Container(
-                                        // timecountyj9 (73:134)
+                                        // timecountk8T (73:134)
                                         margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                         height: double.infinity,
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.end,
                                           children: [
                                             Container(
-                                              // pmGiF (73:138)
+                                              // pmQyh (73:138)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                               child: Text(
                                                 '7:03 PM',
@@ -1237,13 +1261,13 @@ class dashboard extends StatelessWidget {
                                               ),
                                             ),
                                             Container(
-                                              // count19n3 (73:135)
+                                              // count1PKq (73:135)
                                               width: 12*fem,
                                               height: 13*fem,
                                               child: Stack(
                                                 children: [
                                                   Positioned(
-                                                    // ellipse1fkP (73:136)
+                                                    // ellipse1g43 (73:136)
                                                     left: 0*fem,
                                                     top: 0.799987793*fem,
                                                     child: Align(
@@ -1251,7 +1275,7 @@ class dashboard extends StatelessWidget {
                                                         width: 12*fem,
                                                         height: 11.2*fem,
                                                         child: Image.asset(
-                                                          'assets/page-1/images/ellipse-1-tqR.png',
+                                                          'assets/page-1/images/ellipse-1-K8f.png',
                                                           width: 12*fem,
                                                           height: 11.2*fem,
                                                         ),
@@ -1259,7 +1283,7 @@ class dashboard extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Positioned(
-                                                    // 8ts (73:137)
+                                                    // NhZ (73:137)
                                                     left: 3*fem,
                                                     top: 0*fem,
                                                     child: Align(
@@ -1293,7 +1317,7 @@ class dashboard extends StatelessWidget {
                           ),
                         ),
                         Positioned(
-                          // chatyuV (73:139)
+                          // chatEUs (73:139)
                           left: 0*fem,
                           top: 70*fem,
                           child: Container(
@@ -1303,31 +1327,31 @@ class dashboard extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
-                                  // ellipse3sV5 (73:140)
+                                  // ellipse39Lw (73:140)
                                   width: 49*fem,
                                   height: 47*fem,
                                   child: Image.asset(
-                                    'assets/page-1/images/ellipse-3-9Sb.png',
+                                    'assets/page-1/images/ellipse-3.png',
                                     width: 49*fem,
                                     height: 47*fem,
                                   ),
                                 ),
                                 Container(
-                                  // autogroupjsdynM9 (TGLfGrsPcjRvWDHkQoJSdy)
+                                  // autogroupg7fzUPD (EJUMFqThkAdgvURQtug7fZ)
                                   padding: EdgeInsets.fromLTRB(7*fem, 7*fem, 0*fem, 5*fem),
                                   height: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
-                                        // autogroup68tbgSX (TGLf82nmY6DZcT6AZ868tB)
+                                        // autogroupfoesLRR (EJUM7RY45pVjzmwxexFoes)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 161*fem, 0*fem),
                                         height: double.infinity,
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              // anniaH1 (73:141)
+                                              // anniFoH (73:141)
                                               'Anni',
                                               style: SafeGoogleFont (
                                                 'Quicksand',
@@ -1338,7 +1362,7 @@ class dashboard extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              // thaterrorishow5zT (73:142)
+                                              // thaterrorishowyzB (73:142)
                                               'That error is how',
                                               style: SafeGoogleFont (
                                                 'Quicksand',
@@ -1352,14 +1376,14 @@ class dashboard extends StatelessWidget {
                                         ),
                                       ),
                                       Container(
-                                        // timecountBXh (73:143)
+                                        // timecounthfH (73:143)
                                         margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 2*fem),
                                         height: double.infinity,
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.end,
                                           children: [
                                             Container(
-                                              // pmgUT (73:147)
+                                              // pmayy (73:147)
                                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                                               child: Text(
                                                 '7:03 PM',
@@ -1373,13 +1397,13 @@ class dashboard extends StatelessWidget {
                                               ),
                                             ),
                                             Container(
-                                              // count1MKh (73:144)
+                                              // count1GM1 (73:144)
                                               width: 12*fem,
                                               height: 13*fem,
                                               child: Stack(
                                                 children: [
                                                   Positioned(
-                                                    // ellipse14ju (73:145)
+                                                    // ellipse113h (73:145)
                                                     left: 0*fem,
                                                     top: 0.799987793*fem,
                                                     child: Align(
@@ -1387,7 +1411,7 @@ class dashboard extends StatelessWidget {
                                                         width: 12*fem,
                                                         height: 11.2*fem,
                                                         child: Image.asset(
-                                                          'assets/page-1/images/ellipse-1-NMH.png',
+                                                          'assets/page-1/images/ellipse-1-HUo.png',
                                                           width: 12*fem,
                                                           height: 11.2*fem,
                                                         ),
@@ -1395,7 +1419,7 @@ class dashboard extends StatelessWidget {
                                                     ),
                                                   ),
                                                   Positioned(
-                                                    // jr3 (73:146)
+                                                    // VUf (73:146)
                                                     left: 3*fem,
                                                     top: 0*fem,
                                                     child: Align(
@@ -1440,3 +1464,7 @@ class dashboard extends StatelessWidget {
           );
   }
 }
+
+
+
+

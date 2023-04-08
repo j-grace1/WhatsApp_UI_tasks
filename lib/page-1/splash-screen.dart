@@ -13,18 +13,18 @@ class SplashScreen extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // splashscreenbjy (1:2)
+        // splashscreenu5u (1:2)
         padding: EdgeInsets.fromLTRB(156*fem, 323*fem, 151*fem, 19*fem),
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
-
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // logoswhatsappiconSGj (2:6)
+              // logoswhatsappiconMVd (2:6)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 378*fem),
               child: TextButton(
                 onPressed: () {},
@@ -43,14 +43,14 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             Container(
-              // logoYj5 (2:13)
+              // logoAxs (2:13)
               padding: EdgeInsets.fromLTRB(3.63*fem, 0*fem, 0*fem, 0*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // fromC2w (2:14)
+                    // frompnX (2:14)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 8.63*fem, 1*fem),
                     child: Text(
                       'from',
@@ -64,13 +64,13 @@ class SplashScreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // autogroup3nsxZXh (TGLbB9N9j5bf9wTbfu3NSX)
+                    // autogrouppdbrqxX (EJUHWhCWwrm38B5MBQPdBR)
                     width: double.infinity,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // tablerbrandmeta4DZ (2:10)
+                          // tablerbrandmetajo1 (2:10)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3.63*fem, 0*fem),
                           width: 21.75*fem,
                           height: 9*fem,
@@ -81,7 +81,7 @@ class SplashScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          // meta8sd (2:12)
+                          // metamdD (2:12)
                           'Meta',
                           style: SafeGoogleFont (
                             'Quicksand',

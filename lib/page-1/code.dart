@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
-
+import 'package:myapp/imports.dart';
 class Code extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,17 +8,17 @@ class Code extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // coden7V (22:20)
+        // codeqX9 (22:20)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
-
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // tabrNF (23:54)
+              // tabwKH (23:54)
               width: double.infinity,
               height: 61*fem,
               decoration: BoxDecoration (
@@ -47,14 +42,14 @@ class Code extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroup7fkhRZm (TGLcfwCsREeyQ8SZcs7FKH)
+              // autogroupqcjvNQb (EJUJpf1wkMqcEhAu7dqcjV)
               padding: EdgeInsets.fromLTRB(24*fem, 233*fem, 24*fem, 386*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // otpW5R (22:49)
+                    // otped1 (22:49)
                     margin: EdgeInsets.fromLTRB(17*fem, 0*fem, 17*fem, 95*fem),
                     width: double.infinity,
                     height: 33*fem,
@@ -65,7 +60,7 @@ class Code extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // boxvuq (22:30)
+                          // boxhrB (22:30)
                           width: 36*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -89,7 +84,7 @@ class Code extends StatelessWidget {
                           width: 32*fem,
                         ),
                         Container(
-                          // boxu15 (22:37)
+                          // boxtQs (22:37)
                           width: 36*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -113,7 +108,7 @@ class Code extends StatelessWidget {
                           width: 32*fem,
                         ),
                         Container(
-                          // box6rF (22:40)
+                          // boxgbd (22:40)
                           width: 36*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -137,7 +132,7 @@ class Code extends StatelessWidget {
                           width: 32*fem,
                         ),
                         Container(
-                          // box6Dy (22:43)
+                          // boxjpo (22:43)
                           width: 36*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -161,7 +156,7 @@ class Code extends StatelessWidget {
                           width: 32*fem,
                         ),
                         Container(
-                          // boxtQj (22:46)
+                          // boxxhZ (22:46)
                           width: 36*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -185,7 +180,7 @@ class Code extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // buttonvcK (22:25)
+                    // buttonpUs (22:25)
                     width: double.infinity,
                     height: 36*fem,
                     decoration: BoxDecoration (

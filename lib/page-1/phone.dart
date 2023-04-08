@@ -13,17 +13,17 @@ class Phone extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // phoneSUK (20:2)
+        // phoneWgb (20:2)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
-
+          borderRadius: BorderRadius.circular(20*fem),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // tabcXD (23:53)
+              // tabPkP (23:53)
               width: double.infinity,
               height: 61*fem,
               decoration: BoxDecoration (
@@ -47,27 +47,27 @@ class Phone extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupf8kdXGo (TGLba3semGnPKUQpYXf8KD)
+              // autogroupqxd1Ymh (EJUHwbego4i9XciQD6Qxd1)
               padding: EdgeInsets.fromLTRB(24*fem, 167*fem, 21*fem, 494*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // inputC83 (22:50)
+                    // input4EF (22:50)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 52.5*fem),
                     padding: EdgeInsets.fromLTRB(3*fem, 0*fem, 3*fem, 0*fem),
                     width: 342*fem,
                     height: 33.5*fem,
                     child: Container(
-                      // autogroup49vd3uM (TGLbrxZ9NRfxmHJYwz49VD)
+                      // autogroupjdj9w39 (EJUJ9ReK6E55nEwjJMjdj9)
                       width: 162*fem,
                       height: 28*fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // materialsymbolsphonecallback7u (22:14)
+                            // materialsymbolsphonecallbackFZ (22:14)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 32.8*fem, 2.4*fem),
                             width: 18.2*fem,
                             height: 18.4*fem,
@@ -78,7 +78,7 @@ class Phone extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            // mD5 (22:16)
+                            // 64T (22:16)
                             '679874564',
                             style: SafeGoogleFont (
                               'Quicksand',
@@ -93,7 +93,7 @@ class Phone extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // buttoneXm (22:19)
+                    // buttonC7V (22:19)
                     margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 0*fem, 0*fem),
                     width: 342*fem,
                     height: 36*fem,
@@ -123,24 +123,3 @@ class Phone extends StatelessWidget {
           );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
