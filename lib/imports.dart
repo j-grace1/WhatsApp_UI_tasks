@@ -14,6 +14,7 @@ export 'package:myapp/page-1/calls.dart';
 export 'package:myapp/page-1/settings.dart';
 export 'package:myapp/page-1/dm.dart';
 export 'package:myapp/icons/macbook-air-1.dart';
-export 'package:myapp/page-1/appbar.dart';
+export 'package:myapp/page-1/dashboard/appbar.dart';
 export 'package:myapp/page-1/constants.dart';
 export 'package:myapp/page-1/dashboard/chat_widget.dart';
+export 'package:myapp/page-1/homescreen/homescreen.dart';

@@ -1,34 +1,17 @@
 import 'imports.dart';
 
-
 void main() => runApp(MyApp());
 
-
 class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-		return MaterialApp(
-			title: 'Whatsapp UI',
-			debugShowCheckedModeBanner: false,
-			scrollBehavior: MyCustomScrollBehavior(),
-			theme: ThemeData(
-				primarySwatch: Colors.green,
-			),
-			home: MediaQuery(
-				data: const MediaQueryData(),
-				child: DefaultTabController(
-					length: 4,
-					child: Scaffold(
-						appBar: const MyAppBar(title: 'WhatsApp'),
-
-
-						body: SingleChildScrollView(
-							child: Dashboard(),
-						),
-
-					),
-				),
-			),
-		);
-	}
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+          fontFamily: "OpenSans",
+          primaryColor: Color(0xFF075E54),
+          accentColor: Color(0xFF128C7E)),
+      home: Homesreen(),
+    );
+  }
 }
