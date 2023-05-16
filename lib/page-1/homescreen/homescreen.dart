@@ -1,16 +1,14 @@
-import 'package:myapp/Models/ChatModel.dart';
-import 'package:myapp/Pages/CameraPage.dart';
-import 'package:myapp/Pages/ChatPage.dart';
-import 'package:flutter/material.dart';
+import 'package:myapp/Pages/callsPage.dart';
+import 'package:myapp/imports.dart';
 
-class WhatsAppDashboard extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  _WhatsAppDashboardState createState() => _WhatsAppDashboardState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _WhatsAppDashboardState extends State<WhatsAppDashboard>
+class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {
@@ -28,52 +26,84 @@ class _WhatsAppDashboardState extends State<WhatsAppDashboard>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("WhatsApp"),
+        backgroundColor: Colors.green.shade400,
+        title: Text('WhatsApp'),
         actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
+          Icon(Icons.camera_alt),
+          SizedBox(
+            width: 20,
           ),
-          PopupMenuButton(
-            itemBuilder: (BuildContext context) => [
-              PopupMenuItem(child: Text("New group"), value: "new_group"),
-              PopupMenuItem(
-                  child: Text("New broadcast"), value: "new_broadcast"),
-              PopupMenuItem(child: Text("WhatsApp Web"), value: "whatsapp_web"),
-              PopupMenuItem(
-                  child: Text("Starred messages"), value: "starred_messages"),
-              PopupMenuItem(child: Text("Settings"), value: "settings"),
-            ],
-            onSelected: (value) {
-              // Handle popup menu item selection here
-            },
-          ),
+          Icon(Icons.search),
+          PopupMenuButton<String>(
+              itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+                    const PopupMenuItem<String>(
+                      child: ListTile(
+                        leading: Icon(Icons.group_add),
+                        title: Text('New group'),
+                      ),
+                    ),
+                    const PopupMenuItem<String>(
+                      child: ListTile(
+                        leading: Icon(Icons.group_add),
+                        title: Text('New broadcast'),
+                      ),
+                    ),
+                    const PopupMenuItem<String>(
+                      child: ListTile(
+                        leading: Icon(Icons.group_add),
+                        title: Text('WhatsApp Web'),
+                      ),
+                    ),
+                    const PopupMenuItem<String>(
+                      child: ListTile(
+                        leading: Icon(Icons.group_add),
+                        title: Text('Starred messages'),
+                      ),
+                    ),
+                    const PopupMenuItem<String>(
+                      child: ListTile(
+                        leading: Icon(Icons.group_add),
+                        title: Text('Settings'),
+                      ),
+                    )
+                  ],
+              onSelected: (String value) {
+                switch (value) {
+                  case 'newGroup':
+                    // Handle new group option
+                    break;
+                  case 'newBroadcast':
+                    // Handle new broadcast option
+                    break;
+                  case 'whatsappWeb':
+                    // Handle WhatsApp Web option
+                    break;
+                  case 'starredMessages':
+                    // Handle starred messages option
+                    break;
+                  case 'settings':
+                    // Handle settings option
+                    break;
+                }
+              })
         ],
         bottom: TabBar(
           controller: _tabController,
           tabs: [
-            Tab(
-              icon: Icon(Icons.camera_alt),
-            ),
-            Tab(
-              text: "CHATS",
-            ),
-            Tab(
-              text: "STATUS",
-            ),
-            Tab(
-              text: "CALLS",
-            ),
+            Tab(icon: Icon(Icons.group)),
+            Tab(text: 'CHATS'),
+            Tab(text: 'STATUS'),
+            Tab(text: 'CALLS'),
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabController,
         children: [
-          CameraScreen(),
-          ChatScreen(),
-          StatusScreen(),
-          CallScreen(),
+          Community(),
+          ChatPage(),
+          StatusPage(),
+          CallsPage(),
         ],
       ),
     );
