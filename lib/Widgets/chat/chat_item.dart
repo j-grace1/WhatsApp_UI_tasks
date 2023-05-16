@@ -3,7 +3,7 @@ import 'package:myapp/imports.dart';
 class ChatItem extends StatelessWidget {
   final ChatModel chatModel;
 
-  const ChatItem({Key? key, required this.chatModel}) : super(key: key);
+  const ChatItem({required this.chatModel});
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +11,9 @@ class ChatItem extends StatelessWidget {
       children: [
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage('/'),
-            radius: 30,
+            backgroundImage: AssetImage(
+                chatModel.imageUrl), // Provide an appropriate avatar image path
+            radius: 25,
           ),
           title: Text(
             chatModel.name,
@@ -23,12 +24,20 @@ class ChatItem extends StatelessWidget {
               Icon(Icons.done_all),
               SizedBox(width: 5),
               Text(
-                'test',
+                chatModel.lastMessage,
                 style: TextStyle(color: Colors.grey.shade600),
               ),
             ],
           ),
-          trailing: Text(chatModel.time),
+          trailing: Column(
+            children: [
+              Text(chatModel.time),
+              SizedBox(
+                height: 10,
+              ),
+              Text(chatModel.messageCount),
+            ],
+          ),
         ),
         Divider(
           height: 10,

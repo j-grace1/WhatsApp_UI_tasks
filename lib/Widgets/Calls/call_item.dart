@@ -9,25 +9,6 @@ class CallItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: AssetImage(''),
-      ),
-      title: Text(call.name),
-      subtitle: Row(
-        children: [
-          Icon(
-            call.callType == "incoming" ? Icons.call_received : Icons.call_made,
-            size: 16,
-          ),
-          SizedBox(width: 4),
-          Text(call.callTime)
-        ],
-      ),
-      trailing: IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.call),
-      ),
-    );
+    return Text('tests');
   }
 }

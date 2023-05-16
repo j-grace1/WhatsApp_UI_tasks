@@ -13,6 +13,7 @@ class _StatusPageState extends State<StatusPage> {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
+    List<StatusModel> statusModels = StatusData.getStatusModels();
 
     return Scaffold(
       body: Container(
@@ -103,13 +104,10 @@ class _StatusPageState extends State<StatusPage> {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: statusDataList.length,
+                itemCount: statusModels.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return StatusItem(
-                    name: statusDataList[index].name,
-                    time: statusDataList[index].time,
-                    imageUrl: statusDataList[index].imageUrl,
-                  );
+                  StatusModel statusModel = statusModels[index];
+                  return StatusItem(statusModel: statusModel);
                 },
               ),
             ),

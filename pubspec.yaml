@@ -69,17 +69,14 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
+
     - assets/page-1/images/tabler-brand-meta.png
+    - assets/page-1/images/ellipse-6-bg.png
     - assets/page-1/images/ellipse-6-mwh.png
     - assets/page-1/images/logos-whatsapp-icon.png
     - assets/page-1/images/more.png
     - assets/page-1/images/slr-camera.png
     - assets/page-1/images/ellipse-3.png
-    - assets/page-1/images/ellipse-1.png
-    - assets/page-1/images/ellipse-3-8xb.png
-    - assets/page-1/images/ellipse-3-MhV.png
-    - assets/page-1/images/ellipse-3-z9R.png
-    - assets/page-1/images/ellipse-1-eAf.png
     - assets/page-1/images/people-skin-type-7.png
     - assets/page-1/images/ellipse-1-7bR.png
     - assets/page-1/images/ellipse-1-K8f.png
@@ -140,7 +137,6 @@ flutter:
     - assets/page-1/images/auto-group-pexd.png
     - assets/page-1/images/ellipse-4-bg-Cf5.png
     - assets/page-1/images/ellipse-4-bg.png
-    - assets/page-1/images/ellipse-6-bg.png
     - assets/page-1/images/slr-camera-qFR.png
     - assets/page-1/images/ellipse-7-bg.png
     - assets/page-1/images/ellipse-8-bg-ifd.png

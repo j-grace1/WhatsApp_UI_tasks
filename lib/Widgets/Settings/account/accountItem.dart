@@ -1,21 +1,28 @@
+import 'package:myapp/Models/Settings/Account/accountModel.dart';
 import 'package:myapp/imports.dart';
 
-class StatusItem extends StatelessWidget {
-  final StatusModel statusModel;
+class accountItem extends StatefulWidget {
+  const accountItem({Key? key, required this.accountModel}) : super(key: key);
 
-  const StatusItem({Key? key, required this.statusModel}) : super(key: key);
+  final AccountModel accountModel;
 
+  @override
+  State<accountItem> createState() => _accountItemState();
+}
+
+class _accountItemState extends State<accountItem> {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage(statusModel.imageUrl),
+            backgroundImage: AssetImage(widget.accountModel.settingImageUrl),
             radius: 25,
           ),
           title: Text(
-            statusModel.name,
+            widget.accountModel
+                .name, // Access the name property using widget.accountModel
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: Row(
@@ -23,12 +30,7 @@ class StatusItem extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    statusModel.day,
-                    style: TextStyle(color: Colors.grey.shade600),
-                  ),
-                  SizedBox(width: 10),
-                  Text(
-                    statusModel.time,
+                    '', // Access the settingDescription property using widget.accountModel
                     style: TextStyle(color: Colors.grey.shade600),
                   ),
                 ],

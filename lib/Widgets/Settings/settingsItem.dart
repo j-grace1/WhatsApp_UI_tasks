@@ -1,9 +1,9 @@
 import 'package:myapp/imports.dart';
 
-class StatusItem extends StatelessWidget {
-  final StatusModel statusModel;
+class SettingsItem extends StatelessWidget {
+  final SettingsModel settingsModel;
 
-  const StatusItem({Key? key, required this.statusModel}) : super(key: key);
+  const SettingsItem({Key? key, required this.settingsModel}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +11,11 @@ class StatusItem extends StatelessWidget {
       children: [
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage(statusModel.imageUrl),
+            backgroundImage: AssetImage(settingsModel.settingImageUrl),
             radius: 25,
           ),
           title: Text(
-            statusModel.name,
+            settingsModel.name,
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: Row(
@@ -23,12 +23,7 @@ class StatusItem extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    statusModel.day,
-                    style: TextStyle(color: Colors.grey.shade600),
-                  ),
-                  SizedBox(width: 10),
-                  Text(
-                    statusModel.time,
+                    settingsModel.settingDescription,
                     style: TextStyle(color: Colors.grey.shade600),
                   ),
                 ],

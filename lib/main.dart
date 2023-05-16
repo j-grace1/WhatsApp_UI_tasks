@@ -1,5 +1,3 @@
-import 'package:myapp/Pages/StatusPage.dart';
-
 import 'imports.dart';
 
 void main() => runApp(MyApp());

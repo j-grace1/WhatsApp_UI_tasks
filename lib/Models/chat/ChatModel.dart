@@ -5,15 +5,13 @@ class ChatModel {
   final String imageUrl;
   final String lastMessage;
   final String time;
-  final bool isOnline;
-  final bool hasUnreadMessages;
+  final String messageCount;
 
   ChatModel({
     required this.name,
     required this.imageUrl,
     required this.lastMessage,
     required this.time,
-    required this.isOnline,
-    required this.hasUnreadMessages,
+    required this.messageCount,
   });
 }
