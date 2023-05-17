@@ -38,6 +38,9 @@ class ChatItem extends StatelessWidget {
               Text(chatModel.messageCount),
             ],
           ),
+          onTap: () {
+            // Handle group selection
+          },
         ),
         Divider(
           height: 10,

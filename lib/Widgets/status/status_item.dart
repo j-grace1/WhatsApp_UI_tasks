@@ -35,6 +35,9 @@ class StatusItem extends StatelessWidget {
               )
             ],
           ),
+          onTap: () {
+            // Handle group selection
+          },
         ),
         Divider(
           height: 4,

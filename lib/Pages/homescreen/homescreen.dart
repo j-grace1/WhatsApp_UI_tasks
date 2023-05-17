@@ -1,4 +1,5 @@
 import 'package:myapp/Pages/Tabs/callsPage.dart';
+import 'package:myapp/Pages/settings/chat/chatSettingsPage.dart';
 import 'package:myapp/imports.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -60,10 +61,19 @@ class _HomeScreenState extends State<HomeScreen>
                         title: Text('Starred messages'),
                       ),
                     ),
-                    const PopupMenuItem<String>(
-                      child: ListTile(
-                        leading: Icon(Icons.group_add),
-                        title: Text('Settings'),
+                    PopupMenuItem<String>(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ChatSettingsPage()),
+                          );
+                        },
+                        child: ListTile(
+                          leading: Icon(Icons.group_add),
+                          title: Text('Settings'),
+                        ),
                       ),
                     )
                   ],

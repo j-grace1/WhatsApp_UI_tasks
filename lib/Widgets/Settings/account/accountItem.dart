@@ -37,6 +37,9 @@ class _accountItemState extends State<accountItem> {
               )
             ],
           ),
+          onTap: () {
+            // Handle group selection
+          },
         ),
         Divider(
           height: 4,
