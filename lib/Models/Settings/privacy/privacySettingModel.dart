@@ -1,24 +1,27 @@
-// chat_settings_model.dart
-class ChatSettingModel {
-  final name;
-  final String description;
-  final List<SubSettingModel>? subSettings;
+import 'package:flutter/material.dart';
 
-  ChatSettingModel({
-    required this.name,
-    required this.description,
-    this.subSettings,
+class PrivacySettingSection {
+  final String? name;
+  final List<PrivacySubSetting> subSettings;
+
+  PrivacySettingSection({
+    this.name,
+    required this.subSettings,
   });
 }
 
-class SubSettingModel {
+class PrivacySubSetting {
+  final IconData? icon;
   final String name;
-  final String description;
-  final bool hasSwitchToggle;
+  final String? description;
+  final bool hasToggle;
+  final String? status;
 
-  SubSettingModel({
+  PrivacySubSetting({
+    this.icon,
     required this.name,
-    required this.description,
-    required this.hasSwitchToggle,
+    this.description,
+    this.hasToggle = false,
+    this.status,
   });
 }

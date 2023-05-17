@@ -1,48 +1,53 @@
 import 'package:myapp/imports.dart';
 
-class accountSettingPage extends StatefulWidget {
-  const accountSettingPage({Key? key}) : super(key: key);
+class AccountSettingPage extends StatefulWidget {
+  const AccountSettingPage({Key? key}) : super(key: key);
 
   @override
-  State<accountSettingPage> createState() => _accountSettingPageState();
+  State<AccountSettingPage> createState() => _AccountSettingPageState();
 }
 
-class _accountSettingPageState extends State<accountSettingPage> {
+class _AccountSettingPageState extends State<AccountSettingPage> {
+  List<AccountModel> accountModel = [];
+
+  @override
+  void initState() {
+    super.initState();
+    accountModel = AccountData()
+        .getAccountData(); // Create an instance of AccountData and call getAccountData()
+  }
+
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 390;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
-    List<StatusModel> statusModels = StatusData.getStatusModels();
-
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Row(
-          children: [
-            Text(
-              'Account',
-              style: TextStyle(
-                fontSize: 20,
-              ),
-            )
-          ],
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(100), // Set the desired height here
+        child: AppBar(
+          backgroundColor: Colors.green,
+          title: Row(
+            children: [
+              Text(
+                'Account Settings',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              )
+            ],
+          ),
         ),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView.builder(
-                itemCount: statusModels.length,
-                itemBuilder: (BuildContext context, int index) {
-                  StatusModel statusModel = statusModels[index];
-                  return StatusItem(statusModel: statusModel);
-                },
-              ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+              itemCount: accountModel.length,
+              itemBuilder: (BuildContext context, int index) {
+                AccountModel account = accountModel[index];
+                return accountItem(accountModel: account);
+              },
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

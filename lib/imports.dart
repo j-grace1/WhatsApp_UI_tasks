@@ -19,6 +19,8 @@ export 'package:myapp/Widgets/status/status_item.dart';
 export 'package:myapp/Data/status/status_data.dart';
 
 export 'package:myapp/Data/status/status_data.dart';
+export 'package:myapp/Data/Profile/ProfileData.dart';
+
 export 'package:myapp/Models/satus/status_model.dart';
 export 'package:myapp/Models/chat/message.dart';
 export 'package:myapp/Models/chat/ChatModel.dart';
@@ -43,3 +45,13 @@ export 'package:myapp/Widgets/Settings/chats/chatItem.dart';
 export 'package:myapp/Pages/settings/settingsPage.dart';
 export 'package:myapp/Pages/settings/chat/chatSettingsPage.dart';
 export 'package:myapp/Pages/settings/accounts/accountPage.dart';
+export 'package:myapp/Models/Profile/ProfileModel.dart';
+export 'package:myapp/Widgets/Profile/MediaLinksDocs/mediaLinksDocs.dart';
+export 'package:myapp/Widgets/Profile/MediaLinksDocs/profileSettingsItem.dart';
+export 'package:myapp/Widgets/Profile/profileItem.dart';
+export 'package:myapp/Models/Settings/Account/accountModel.dart';
+export 'package:myapp/Data/Settings/account/accountData.dart';
+export 'package:myapp/Widgets/Settings/account/accountItem.dart';
+export 'package:myapp/Data/Settings/privacy/privacySetting.dart';
+export 'package:myapp/Models/Settings/privacy/privacySettingModel.dart';
+export 'package:myapp/Widgets/Settings/privacy/privacySettingsItem.dart';

@@ -1,9 +1,11 @@
+import 'package:myapp/imports.dart';
+
 class AccountModel {
   final String name;
-  final String settingImageUrl;
+  final Icon icon;
 
   AccountModel({
     required this.name,
-    required this.settingImageUrl,
+    required this.icon,
   });
 }

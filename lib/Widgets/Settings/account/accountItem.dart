@@ -1,4 +1,3 @@
-import 'package:myapp/Models/Settings/Account/accountModel.dart';
 import 'package:myapp/imports.dart';
 
 class accountItem extends StatefulWidget {
@@ -15,11 +14,11 @@ class _accountItemState extends State<accountItem> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(
+          height: 10,
+        ),
         ListTile(
-          leading: CircleAvatar(
-            backgroundImage: AssetImage(widget.accountModel.settingImageUrl),
-            radius: 25,
-          ),
+          leading: widget.accountModel.icon,
           title: Text(
             widget.accountModel
                 .name, // Access the name property using widget.accountModel
@@ -31,7 +30,7 @@ class _accountItemState extends State<accountItem> {
                 children: [
                   Text(
                     '', // Access the settingDescription property using widget.accountModel
-                    style: TextStyle(color: Colors.grey.shade600),
+                    style: TextStyle(color: Colors.grey.shade100),
                   ),
                 ],
               )
@@ -42,8 +41,8 @@ class _accountItemState extends State<accountItem> {
           },
         ),
         Divider(
-          height: 4,
-          indent: 80,
+          height: 2,
+          indent: 100,
           endIndent: 20,
         ),
       ],

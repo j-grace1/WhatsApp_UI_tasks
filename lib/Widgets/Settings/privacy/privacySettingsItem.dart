@@ -1,18 +1,24 @@
 import 'package:myapp/imports.dart';
 
-class ChatSettingItem extends StatelessWidget {
-  final ChatSettingModel setting;
+class PrivacySettingItem extends StatelessWidget {
+  final PrivacySubSetting subSetting;
 
-  ChatSettingItem({required this.setting});
+  PrivacySettingItem({required this.subSetting});
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Image.asset(setting.imageUrl),
-      title: Text(setting.name),
-      subtitle: Text(setting.description),
-      trailing:
-          setting.subSettings != null ? Icon(Icons.keyboard_arrow_right) : null,
+      leading: subSetting.icon != null ? Icon(subSetting.icon) : null,
+      title: Text(subSetting.name),
+      subtitle:
+          subSetting.description != null ? Text(subSetting.description!) : null,
+      trailing: subSetting.hasToggle
+          ? Icon(
+              Icons.toggle_off,
+              size: 40,
+              color: Colors.green,
+            )
+          : null,
       onTap: () {
         // Handle setting selection
       },

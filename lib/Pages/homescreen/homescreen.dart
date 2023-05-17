@@ -1,5 +1,7 @@
+import 'package:myapp/Pages/Profile/profilePage.dart';
 import 'package:myapp/Pages/Tabs/callsPage.dart';
 import 'package:myapp/Pages/settings/chat/chatSettingsPage.dart';
+import 'package:myapp/Pages/settings/privacy/privacySettingsPage.dart';
 import 'package:myapp/imports.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -67,7 +69,11 @@ class _HomeScreenState extends State<HomeScreen>
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ChatSettingsPage()),
+                              builder: (context) => ChatSettingsPage(
+                                settingSections:
+                                    ChatSettingsData.getChatSettings(),
+                              ),
+                            ),
                           );
                         },
                         child: ListTile(

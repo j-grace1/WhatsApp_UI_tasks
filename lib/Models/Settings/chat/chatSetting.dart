@@ -1,26 +1,25 @@
-// chat_settings_model.dart
-class ChatSettingModel {
-  final String imageUrl;
-  final String name;
-  final String description;
-  final List<SubSettingModel>? subSettings;
+import 'package:myapp/imports.dart';
 
-  ChatSettingModel({
-    required this.imageUrl,
-    required this.name,
-    required this.description,
-    this.subSettings,
+class ChatSettingSection {
+  final String? name;
+  final List<ChatSubSetting> subSettings;
+
+  ChatSettingSection({
+    this.name,
+    required this.subSettings,
   });
 }
 
-class SubSettingModel {
+class ChatSubSetting {
+  final IconData? icon;
   final String name;
-  final String description;
-  final bool hasSwitchToggle;
+  final String? description;
+  final bool hasToggle;
 
-  SubSettingModel({
+  ChatSubSetting({
+    this.icon,
     required this.name,
-    required this.description,
-    required this.hasSwitchToggle,
+    this.description,
+    this.hasToggle = false,
   });
 }
