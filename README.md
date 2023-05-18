@@ -10,3 +10,4 @@ Learning flutter by reproducing the whatsapp ui
 ![StatusPage](https://github.com/j-grace1/WhatsApp_UI_tasks/assets/82676817/a617c3aa-886f-4406-85d4-3d8446478e26)
 ![UserProfilePage](https://github.com/j-grace1/WhatsApp_UI_tasks/assets/82676817/8fd8b74e-abd1-45ba-bfdc-4248d60b15b5)
 ![UserProfilePageContinuation](https://github.com/j-grace1/WhatsApp_UI_tasks/assets/82676817/1d9f61f0-73d3-4652-ac5c-ce855ec380c3)
+![UserProfilePageContinuation](https://github.com/j-grace1/WhatsApp_UI_tasks/assets/82676817/edfdbb1a-f8a6-446b-baa3-e755bb9a9d1d)
