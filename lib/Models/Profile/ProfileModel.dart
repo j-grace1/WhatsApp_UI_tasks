@@ -1,44 +1,29 @@
-// chat_settings_model.dart
-import 'dart:ui';
+import 'package:myapp/imports.dart';
 
 class ProfileModel {
-  final String imageUrl;
+  final String avatarUrl;
   final String name;
   final String number;
-  final String nickName;
+  final String nickname;
   final String date;
-  final String description;
-  final MediaModel mediaSection;
-  final ProfileSubSettingModel subSettings;
+  final List<String> mediaImages;
+  final List<String> links;
+  final List<String> documents;
+  final List<ChatSettingSection> profileSetting;
 
   ProfileModel({
-    required this.imageUrl,
+    required this.profileSetting,
+    required this.avatarUrl,
     required this.name,
-    required this.date,
     required this.number,
-    required this.nickName,
-    required this.description,
-    required this.mediaSection,
-    required this.subSettings,
+    required this.nickname,
+    required this.date,
+    required this.mediaImages,
+    required this.links,
+    required this.documents,
   });
-}
 
-class ProfileSubSettingModel {
-  final String subSettingname;
-  final String subSettingUrl;
-  final bool hasSwitchToggle;
-
-  ProfileSubSettingModel({
-    required this.subSettingname,
-    required this.subSettingUrl,
-    required this.hasSwitchToggle,
-  });
-}
-
-class MediaModel {
-  final String Image;
-
-  MediaModel({
-    required this.Image,
-  });
+  List<ChatSettingSection> getProfileSettings() {
+    return profileSetting;
+  }
 }

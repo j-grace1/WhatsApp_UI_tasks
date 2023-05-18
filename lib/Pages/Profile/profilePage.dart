@@ -1,47 +1,59 @@
 import 'package:myapp/imports.dart';
 
 class ProfilePage extends StatelessWidget {
-  final List<ProfileModel> profiles = ProfileData.getProfileModels();
+  final ProfileModel profileModel;
+
+  ProfilePage({required this.profileModel});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
+        backgroundColor: Colors.green,
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: ProfileItem(
-                profileModel: profiles[0],
-                profileSubSettingModel: profiles[0].subSettings,
-              ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 1,
-                itemBuilder: (context, index) {
-                  return MediaLinksDocs(
-                    mediaModel: profiles[0].mediaSection,
-                  );
-                },
-              ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: profiles.length,
-                itemBuilder: (context, index) {
-                  return ProfileSettingsItem(
-                    profileModel: profiles[index],
-                    profileSubSettingModel: profiles[index].subSettings,
-                  );
-                },
-              ),
-            ),
-          ],
-        ),
+      body: ProfileItem(
+        profileModel: profileModel,
+      ),
+    );
+  }
+}
+
+class ChatSettingsPage extends StatelessWidget {
+  final List<ChatSettingSection> settingSections;
+
+  ChatSettingsPage({required this.settingSections});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Chats'),
+      ),
+      body: ListView.builder(
+        itemCount: settingSections.length,
+        itemBuilder: (context, index) {
+          final section = settingSections[index];
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: 10),
+              if (section.name != null)
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    section.name!,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              for (final subSetting in section.subSettings)
+                ChatSettingItem(subSetting: subSetting),
+            ],
+          );
+        },
       ),
     );
   }

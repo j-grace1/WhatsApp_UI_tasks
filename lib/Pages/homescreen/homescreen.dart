@@ -1,4 +1,5 @@
 import 'package:myapp/Pages/Profile/profilePage.dart';
+import 'package:myapp/Pages/Tabs/CommunityPage.dart';
 import 'package:myapp/Pages/Tabs/callsPage.dart';
 import 'package:myapp/Pages/settings/chat/chatSettingsPage.dart';
 import 'package:myapp/Pages/settings/privacy/privacySettingsPage.dart';
@@ -66,14 +67,13 @@ class _HomeScreenState extends State<HomeScreen>
                     PopupMenuItem<String>(
                       child: GestureDetector(
                         onTap: () {
+                          ProfileModel profileModel =
+                              ProfileData.getProfileData();
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => ChatSettingsPage(
-                                settingSections:
-                                    ChatSettingsData.getChatSettings(),
-                              ),
-                            ),
+                                builder: (context) =>
+                                    ProfilePage(profileModel: profileModel)),
                           );
                         },
                         child: ListTile(
@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen>
       body: TabBarView(
         controller: _tabController,
         children: [
-          Community(),
+          CommunityPage(),
           ChatPage(),
           StatusPage(),
           CallsPage(),

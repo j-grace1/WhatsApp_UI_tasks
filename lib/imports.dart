@@ -55,3 +55,5 @@ export 'package:myapp/Widgets/Settings/account/accountItem.dart';
 export 'package:myapp/Data/Settings/privacy/privacySetting.dart';
 export 'package:myapp/Models/Settings/privacy/privacySettingModel.dart';
 export 'package:myapp/Widgets/Settings/privacy/privacySettingsItem.dart';
+export 'package:myapp/Widgets/community/community_item.dart';
+export 'package:myapp/Data/community/CommunityData.dart';

@@ -1,27 +1,27 @@
-import 'package:myapp/imports.dart';
-
 class CommunityModel {
-  final String communityName;
-  final String imageUrl;
-  final List<subCommunityModel> groups;
+  final String name;
+  final String url;
+  final List<GroupModel> groups;
 
   CommunityModel({
-    required this.communityName,
-    required this.imageUrl,
+    required this.name,
+    required this.url,
     required this.groups,
   });
 }
 
-class subCommunityModel {
-  final String imageUrl;
-  final String groupName;
-  final String groupLastMessage;
-  final String lastReadTime;
+class GroupModel {
+  final String avatarImageUrl;
+  final String name;
+  final String description;
+  final String lastReadDayOrTime;
+  final bool hasGreenAvatar;
 
-  subCommunityModel({
-    required this.imageUrl,
-    required this.groupName,
-    required this.groupLastMessage,
-    required this.lastReadTime,
+  GroupModel({
+    required this.avatarImageUrl,
+    required this.name,
+    required this.description,
+    required this.lastReadDayOrTime,
+    this.hasGreenAvatar = false,
   });
 }

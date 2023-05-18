@@ -11,6 +11,6 @@ class CallsPage extends StatefulWidget {
 class _CallsPageState extends State<CallsPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const CallItem(call: c);
   }
 }

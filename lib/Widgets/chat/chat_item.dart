@@ -31,11 +31,21 @@ class ChatItem extends StatelessWidget {
           ),
           trailing: Column(
             children: [
-              Text(chatModel.time),
+              Text(
+                chatModel.time,
+                style: TextStyle(color: Colors.green),
+              ),
               SizedBox(
                 height: 10,
               ),
-              Text(chatModel.messageCount),
+              CircleAvatar(
+                child: Text(
+                  chatModel.messageCount,
+                  style: TextStyle(),
+                ),
+                radius: 10,
+                backgroundColor: Colors.green,
+              )
             ],
           ),
           onTap: () {
