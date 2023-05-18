@@ -1,16 +1,13 @@
 class CallModel {
+  final String imageUrl;
   final String name;
-  final String day;
-  final String callCount;
-  final String avatarUrl;
-  final String callType;
-  final String callTime;
+  final bool isIncoming;
+  final DateTime dateTime;
 
-  CallModel(
-      {required this.name,
-      required this.day,
-      required this.callCount,
-      required this.avatarUrl,
-      required this.callType,
-      required this.callTime});
+  CallModel({
+    required this.imageUrl,
+    required this.name,
+    required this.isIncoming,
+    required this.dateTime,
+  });
 }

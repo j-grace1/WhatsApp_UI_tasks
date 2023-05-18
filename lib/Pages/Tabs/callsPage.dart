@@ -1,16 +1,36 @@
-import 'package:myapp/Pages/settings/accounts/accountPage.dart';
 import 'package:myapp/imports.dart';
 
-class CallsPage extends StatefulWidget {
-  const CallsPage({Key? key}) : super(key: key);
-
-  @override
-  State<CallsPage> createState() => _CallsPageState();
-}
-
-class _CallsPageState extends State<CallsPage> {
+class CallsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const CallItem(call: c);
+    final calls = CallData.getCalls();
+
+    return Scaffold(
+      body: Column(
+        children: [
+          ListTile(
+            leading: CircleAvatar(
+              child: Icon(
+                Icons.link,
+                color: Colors.white,
+              ),
+              backgroundColor: Colors.green,
+              radius: 25,
+            ),
+            title: Text('Create call link'),
+            subtitle: Text('Share a link for you Whatsapp call'),
+          ),
+          Divider(),
+          Expanded(
+              child: ListView.builder(
+            itemCount: calls.length,
+            itemBuilder: (context, index) {
+              final call = calls[index];
+              return CallItem(call: call);
+            },
+          ))
+        ],
+      ),
+    );
   }
 }

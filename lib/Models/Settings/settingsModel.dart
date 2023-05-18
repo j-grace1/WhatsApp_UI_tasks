@@ -1,11 +1,15 @@
-class SettingsModel {
-  final String name;
-  final String settingDescription;
-  final String settingImageUrl;
+import 'package:myapp/imports.dart';
 
-  SettingsModel({
+class SettingItem {
+  final IconData icon;
+  final String name;
+  final String? description;
+  final Widget? settingPage;
+
+  SettingItem({
+    required this.icon,
     required this.name,
-    required this.settingDescription,
-    required this.settingImageUrl,
+    this.description,
+    this.settingPage,
   });
 }

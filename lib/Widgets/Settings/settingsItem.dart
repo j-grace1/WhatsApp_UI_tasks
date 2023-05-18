@@ -1,45 +1,24 @@
 import 'package:myapp/imports.dart';
 
-class SettingsItem extends StatelessWidget {
-  final SettingsModel settingsModel;
+class SettingItemWidget extends StatelessWidget {
+  final SettingItem item;
 
-  const SettingsItem({Key? key, required this.settingsModel}) : super(key: key);
+  const SettingItemWidget({required this.item});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ListTile(
-          leading: CircleAvatar(
-            backgroundImage: AssetImage(settingsModel.settingImageUrl),
-            radius: 25,
-          ),
-          title: Text(
-            settingsModel.name,
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          subtitle: Row(
-            children: [
-              Row(
-                children: [
-                  Text(
-                    settingsModel.settingDescription,
-                    style: TextStyle(color: Colors.grey.shade600),
-                  ),
-                ],
-              )
-            ],
-          ),
-          onTap: () {
-            // Handle group selection
-          },
-        ),
-        Divider(
-          height: 4,
-          indent: 80,
-          endIndent: 20,
-        ),
-      ],
+    return ListTile(
+      leading: Icon(item.icon),
+      title: Text(item.name),
+      subtitle: item.description != null ? Text(item.description!) : null,
+      onTap: () {
+        if (item.settingPage != null) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => item.settingPage!),
+          );
+        }
+      },
     );
   }
 }

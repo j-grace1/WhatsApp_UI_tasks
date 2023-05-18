@@ -6,44 +6,67 @@ class CommunityPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemCount: communityData.length,
-        itemBuilder: (context, index) {
-          final community = communityData[index];
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 20,
+      body: Column(
+        children: [
+          SizedBox(
+            height: 20,
+          ),
+          ListTile(
+            leading: CircleAvatar(
+              child: Icon(
+                Icons.group,
+                size: 30,
+                color: Colors.white,
               ),
-              ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage(community.url),
-                ),
-                title: Text(community.name),
-                onTap: () {
-                  // Handle community selection
-                },
+              backgroundColor: Colors.grey,
+            ),
+            title: Text(
+              'New community',
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 20,
               ),
-              ListView.builder(
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                itemCount: community.groups.length,
-                itemBuilder: (context, groupIndex) {
-                  final group = community.groups[groupIndex];
-                  return GroupItem(group: group);
-                },
-              ),
-              TextButton(
-                onPressed: () {
-                  // Handle "View All" button press
-                },
-                child: Text('View All'),
-              ),
-              Divider(),
-            ],
-          );
-        },
+            ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: communityData.length,
+              itemBuilder: (context, index) {
+                final community = communityData[index];
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage(community.url),
+                      ),
+                      title: Text(community.name),
+                      onTap: () {
+                        // Handle community selection
+                      },
+                    ),
+                    ListView.builder(
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: community.groups.length,
+                      itemBuilder: (context, groupIndex) {
+                        final group = community.groups[groupIndex];
+                        return GroupItem(group: group);
+                      },
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        // Handle "View All" button press
+                      },
+                      child: Text('View All'),
+                    ),
+                    Divider(),
+                  ],
+                );
+              },
+            ),
+          )
+        ],
       ),
     );
   }
